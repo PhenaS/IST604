@@ -65,10 +65,16 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <h1 class="w3-jumbo w3-hide-small">SAW inc</h1>
       <h1 class="w3-hide-large w3-hide-medium"></h1>
       <h1 class="w3-hide-small">Serving People with Developmental Disabilities</h1>
-      <br><br><br>
     </div>
   </div>
 
+  <div class="w3-display-container w3-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Bloemenpanorama_Maurice_van_Bruggen.jpg" alt="Flowers" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+        <br>
+    </div>
+  </div>
+  
    <!-- Subscribe section -->
   <div class="w3-container w3-black w3-padding-32">
     <h1>Want updates on what we're up to?</h1>
