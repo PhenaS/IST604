@@ -95,7 +95,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <div class="w3-col s4">
         <h4>About</h4>
         <p><a href="#">About us</a></p>
-        <p><a href="#">WHD FLSA chapter 64</a></p>       
+        <p><a href="https://www.dol.gov/whd/FOH/ch64/index.htm">WHD FLSA chapter 64</a></p>       
         <p><a href="#">Commensurate wages</a></p>
         <p><a href="#">Our Locations</a></p> 
         <p><a href="#">We're hiring</a></p>
