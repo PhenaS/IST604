@@ -65,7 +65,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <h1 class="w3-jumbo w3-hide-small">SAW inc</h1>
       <h1 class="w3-hide-large w3-hide-medium"></h1>
       <h1 class="w3-hide-small">Serving People with Developmental Disabilities</h1>
-      <br>
+      <br><br><br>
     </div>
   </div>
 
