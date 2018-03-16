@@ -75,17 +75,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
    <!-- Subscribe section -->
   <div class="w3-container w3-black w3-padding-32">
     <h1>Interested in Working With us?</h1>
-    <p>Enter your email and we will contact you:</p>
+    <p>Leave your email and we'll get in touch:</p>
     <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Submit</button>
   </div>
   
   <!-- Footer -->
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
       <div class="w3-col s4">
-        <h4>Contact</h4>
-        <p>Customer Inquiries</p>
+        <h4>Customer Inquiries</h4>
+        <p>Leave us a message and we'll contact you</p>
         <form action="/action_page.php" target="_blank">
           <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
