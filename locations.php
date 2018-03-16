@@ -27,9 +27,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </p>
   </header>
   
-<div class="w3-main" style="margin-left:0px">
+<div class="w3-main" style="margin-left:10px">
     <body>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.836252065478!2d-81.69073538457049!3d41.50782317925326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fa78535c1473%3A0x7e7677594d50f8c3!2s1275+Lakeside+Ave+E%2C+Cleveland%2C+OH+44114!5e0!3m2!1sen!2sus!4v1521238460812" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p><i class="fa fa-fw fa-map-marker"></i> Main Office </p>
+        <p><i class="fa fa-fw fa-map-marker"></i>1275 Lakeside Ave, Cleveland, OH 44114</p> 
+        <p><i class="fa fa-fw fa-phone"></i> 012-345-6789</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <br><br>
         <p><i class="fa fa-fw fa-map-marker"></i> Main Office </p>
         <p><i class="fa fa-fw fa-map-marker"></i>1275 Lakeside Ave, Cleveland, OH 44114</p> 
         <p><i class="fa fa-fw fa-phone"></i> 012-345-6789</p>
