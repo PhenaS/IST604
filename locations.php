@@ -27,6 +27,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h2>Column 2</h2>
     <p>Some text..</p>
   </div>
+    <div class="column" style="background-color:#aaa;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 4</h2>
+    <p>Some text..</p>
+  </div>
 </div>
         
 
