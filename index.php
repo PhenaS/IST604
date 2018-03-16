@@ -17,24 +17,20 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide"><b>LOGO</b></h3>
+    <h3 class="w3-wide"><b>SAW</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">Shirts</a>
-    <a href="#" class="w3-bar-item w3-button">Dresses</a>
+    <a href="#" class="w3-bar-item w3-button">Individuals</a>
+    <a href="#" class="w3-bar-item w3-button">Families</a>
     <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      Solutions At Work <i class="fa fa-caret-down"></i>
+      Staff <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-      <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-      <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-      <a href="#" class="w3-bar-item w3-button">Straight</a>
+      <a href="#" class="w3-bar-item w3-button">AAC Staff</a>
+      <a href="#" class="w3-bar-item w3-button">Engineers</a>
+      <a href="#" class="w3-bar-item w3-button">Accountants</a>
     </div>
-    <a href="#" class="w3-bar-item w3-button">Jackets</a>
-    <a href="#" class="w3-bar-item w3-button">Gymwear</a>
-    <a href="#" class="w3-bar-item w3-button">Blazers</a>
-    <a href="#" class="w3-bar-item w3-button">Shoes</a>
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
