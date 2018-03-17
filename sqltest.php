@@ -20,7 +20,7 @@ while ($row = sqlsrv_fetch($res)) {
 var_dump($row);
 }
 
-echo $res
-       
+echo [$res]
+        
 sqlsrv_close($conn)       
 ?>
