@@ -16,5 +16,5 @@ var_dump($row);
 }
 
 //Close the connection
-mysqli_close($conn);
+sqlsrv_close($conn);
 ?>
