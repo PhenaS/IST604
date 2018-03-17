@@ -27,8 +27,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
             <option value="Credit Card">Credit Card</option>
             <option value="PayPal">Paypal</option>
           </select>
-          <p><input type="radio" name="gender" value="male"> Monthly Pledge<br></p>
-          <p><input type="radio" name="gender" value="female"> One Time Donation<br></p>
+          <p><input type="radio" name="gender" value="male"> Monthly Pledge</p>
+          <p><input type="radio" name="gender" value="female">   One Time Donation<br></p>
           <button type="submit" class="w3-button w3-block w3-black">Continue to Payment</button>
         </form>
       </div>
