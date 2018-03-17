@@ -17,29 +17,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     height: 300px; /* Should be removed. Only for demonstration */
 }
 </style>
-<body class="w3-content" style="max-width:1200px">
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
-  </div>
-    <div class="column" style="background-color:#aaa;">
-    <h2>Column 3</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 4</h2>
-    <p>Some text..</p>
-  </div>
-</div>
-</body>
-</html>
-        
-
+      
 <!-- Top menu on small screens -->
 <<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
   <div class="w3-bar-item w3-padding-24 w3-wide">SAW</div>
