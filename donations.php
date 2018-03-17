@@ -15,8 +15,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <body>
   <div class="w3-row-padding">
       <div class="w3-col s4">
-        <h4>Interested in working with us?</h4>
-        <p>Leave us a message and we'll contact you</p>
+        <h4>Solutions at Work inc</h4>
+        <p>We are a 501(c)(3) Non-Profit Organization <br> Our sole mission is to help improve the lives of people with developmental disabilities</p>
         <form action="/action_page.php" target="_blank">
           <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
