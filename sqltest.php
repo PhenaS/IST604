@@ -9,6 +9,5 @@ $connectionOptions = array(
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 $tsql= "SELECT * FROM employee";
 $getResults= sqlsrv_query($conn, $tsql);
-echo ("Reading data from table" . PHP_EOL);
 echo $getResults;
 ?>
