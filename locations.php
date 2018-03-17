@@ -16,6 +16,21 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
 }
+.google_map{
+    width:55%;
+    margin-right:2%;
+    float: left;
+}
+.google_map iframe{
+   width:100%;
+}
+.paragraph {
+    width:42%;
+    float: left;
+}
+.clearfix{
+    clear:both
+}
 </style>
       
 <!-- Top menu on small screens -->
