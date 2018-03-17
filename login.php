@@ -20,6 +20,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <form action="/action_page.php" target="_blank">
           <p><input class="w3-input w3-border" type="text" placeholder="EmployeeID" name="EmployeeID" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="PIN" name=PIN" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Submit</button>
         </form> 
       </div>
 </body>
