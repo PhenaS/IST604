@@ -22,9 +22,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
-          <p><input type="radio" name="gender" value="male"> Male<br></p>
-          <p><input type="radio" name="gender" value="female"> Female<br></p>
-          <p><input type="radio" name="gender" value="other"> Other </p>
+          <p><input type="radio" name="gender" value="male"> Monthly Pledge<br></p>
+          <p><input type="radio" name="gender" value="female"> One Time Donation<br>
           <button type="submit" class="w3-button w3-block w3-black">Continue to Checkout</button>
         </form>
       </div>
