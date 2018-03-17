@@ -56,14 +56,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <p><i class="fa fa-fw fa-phone"></i> 012-345-6789</p>
     <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
 </div>
-<div class="w3-main" style="margin-left:800px">
-    <body>
-        <p><b> Beachwood Adult Activity Center</b></p>
-        <p><i class="fa fa-fw fa-map-marker"></i></p> 
-        <p><i class="fa fa-fw fa-phone"></i> 012-345-6789</p>
-        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>           
-    </body>
-</div>
+</html>
+
 
   
 
