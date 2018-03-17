@@ -1,7 +1,7 @@
 <?php
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-define('DB_SERVER', 'tcp:phena.database.windows.net,1433');
+define('DB_SERVER', 'phena.database.windows.net');
 define('DB_USERNAME', 'senediak');
 define('DB_PASSWORD', 'ste11PHEN**');
 define('DB_NAME', 'IST604');
