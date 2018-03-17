@@ -19,4 +19,8 @@ $res = sqlsrv_query($conn, 'SELECT * FROM employee');
 while ($row = sqlsrv_fetch($res)) {
 var_dump($row);
 }
+
+echo $res
+       
+sqlsrv_close($conn)       
 ?>
