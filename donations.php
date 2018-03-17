@@ -16,13 +16,16 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-row-padding">
       <div class="w3-col s4">
         <h4>Solutions at Work inc</h4>
-        <p>We are a 501(c)(3) Non-Profit Organization <br><br> Our sole mission is to improve <br> the lives of people with developmental disabilities</p>
+        <p>We are a 501(c)(3) Non-Profit Organization <br><br> Our sole mission is to improve the lives <br> of people with developmental disabilities</p>
         <form action="/action_page.php" target="_blank">
           <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
-          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+          <p><input type="radio" name="gender" value="male"> Male<br></p>
+          <p><input type="radio" name="gender" value="female"> Female<br></p>
+          <p><input type="radio" name="gender" value="other"> Other </p>
+          <button type="submit" class="w3-button w3-block w3-black">Continue to Checkout</button>
         </form>
       </div>
 </body>
