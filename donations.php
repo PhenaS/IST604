@@ -21,12 +21,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Address Line 1" name="Address Line 1" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Address Line 2" name="Address Line 2" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="City" name="City" required></p>
           <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
+            <option value="" disabled selected>Select your Payment Method</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="PayPal">Paypal</option>
           </select>
           <p><input type="radio" name="gender" value="male"> Monthly Pledge<br></p>
           <p><input type="radio" name="gender" value="female"> One Time Donation<br></p>
