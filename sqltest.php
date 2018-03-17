@@ -12,5 +12,5 @@ $getResults= sqlsrv_query($conn, $tsql);
 echo ("Reading data from table" . PHP_EOL);
 if ($getResults == FALSE)
     echo (sqlsrv_errors());
-sqlsrv_free_stmt($getResults);
+echo $getResults;
 ?>
