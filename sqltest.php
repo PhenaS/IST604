@@ -16,7 +16,7 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 
 printf("Reading data from table: \n");
 $res = sqlsrv_query($conn, 'SELECT * FROM employee');
-while ($row = sqlsrv_fetch_array($res)) {
+while ($row = sqlsrv_fetch($res)) {
 var_dump($row);
 }
 ?>
