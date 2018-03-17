@@ -26,8 +26,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>AAC Staff</a>
-      <a href="#" class="w3-bar-item w3-button">Engineers</a>
-      <a href="#" class="w3-bar-item w3-button">Accountants</a>
+      <a href="login.php" class="w3-bar-item w3-button">Engineers</a>
+      <a href="login.php" class="w3-bar-item w3-button">Accountants</a>
      </div>
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
@@ -60,7 +60,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Image header -->
   <div class="w3-display-container w3-container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Bloemenpanorama_Maurice_van_Bruggen.jpg" alt="Flowers" style="width:90%">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Bloemenpanorama_Maurice_van_Bruggen.jpg" alt="Flowers" style="width:97%">
     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
       <h1 class="w3-jumbo w3-hide-small">SAW inc</h1>
       <h1 class="w3-hide-large w3-hide-medium"></h1>
