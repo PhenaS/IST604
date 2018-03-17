@@ -1,26 +1,20 @@
 <?php
+$host = 'phena.databae.windows.net';
+$username = 'senediak@phena';
+$password = 'ste11PHEN**';
+$db_name = 'phena';
 
-try {
-    $conn = new PDO("sqlsrv:server = tcp:phena.database.windows.net,1433; Database = IST604", "senediak", "ste11PHEN**");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e) {
-    print("Error connecting to SQL Server.");
-    die(print_r($e));
-}
+//Establishes the connection
+$conn = mysqli_init();
+sqlsrv_connect($conn, $host, $username, $password, $db_name);
 
-
-$connectionInfo = array("UID" => "senediak@phena", "pwd" => "ste11PHEN**", "Database" => "IST604", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:phena.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
-
+//Run the Select query
 printf("Reading data from table: \n");
-$res = sqlsrv_query($conn, 'SELECT * FROM employee');
+$res = sql_query($conn, 'SELECT * FROM staff');
 while ($row = sqlsrv_fetch_array($res)) {
 var_dump($row);
 }
 
-echo [$res]
-        
-sqlsrv_close($conn)       
+//Close the connection
+mysqli_close($conn);
 ?>
