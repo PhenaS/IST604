@@ -13,4 +13,10 @@ catch (PDOException $e) {
 $connectionInfo = array("UID" => "senediak@phena", "pwd" => "ste11PHEN**", "Database" => "IST604", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:phena.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
+
+printf("Reading data from table: \n");
+$res = sqlsrv_query($conn, 'SELECT * FROM employee');
+while ($row = sqlsrv_fetch_array($res)) {
+var_dump($row);
+}
 ?>
