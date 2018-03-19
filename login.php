@@ -38,7 +38,7 @@ $db = "IST604";
 
 $conn = sqlsrv_connect($host, $user, $pwd, $db); 
 $sql = "SELECT emp_id, pwd FROM employee WHERE emp_id = {?}"; 
-$stmt = sqlsrv_query($conn, $sql, $params); 
+$stmt = sqlsrv_query($conn, $sql); 
 if(sqlsrv_has_rows($stmt)) 
 { 
     echo "Welcome."; 
