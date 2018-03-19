@@ -14,6 +14,8 @@
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </style>  
     <body>
+    <h4>Solutions at Work Inc</h4>
+    <p>Welcome!</p>    
     <?php 
 try{
     $host = "tcp:phena.database.windows.net,1433";
