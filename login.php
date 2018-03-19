@@ -23,7 +23,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <p><input class="w3-input w3-border" type="text" placeholder="EmployeeID" name="EmployeeID" required></p>
         <p><input class="w3-input w3-border" type="password" placeholder="Password" name="Password" required></p>
         <button type="submit" class="w3-button w3-block w3-black">Submit</button>
-        </form> 
+      </form> 
       </div>
 <?php 
 try{
@@ -33,7 +33,7 @@ try{
     $db = "IST604";
     $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT first_name, last_name FROM employee WHERE emp_id = '{$_POST["EmployeeID"]}'"); 
+    $sql = ("SELECT first_name, last_name FROM employee WHERE emp_id='{$_POST["EmployeeID"]}'"); 
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     echo "$row[0] $row[1]";
