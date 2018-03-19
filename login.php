@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Solutions At Work Inc.</title>
-        <?php include "db/connect.php"?>
+        <?php include "db/connect.php";?>
     </head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
