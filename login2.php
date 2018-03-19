@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <body>
-    try{
+    <?php 
+try{
     $host = "tcp:phena.database.windows.net,1433";
     $user = "senediak";
     $pwd = "ste11PHEN**";
@@ -13,7 +14,7 @@
     $row = $stmt->fetch();
     echo "$row[0] $row[1]";
     $conn = NULL;
-    }catch(Exception $e){die(print_r($e));}
-    ?>
+}catch(Exception $e){die(print_r($e));}
+?>
     </body>
 </html>

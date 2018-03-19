@@ -39,9 +39,6 @@ try{
     echo "$row[0] $row[1]";
     $conn = NULL;
 }catch(Exception $e){die(print_r($e));}
-
-
-
 ?>
 
 </body>
