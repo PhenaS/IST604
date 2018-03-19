@@ -15,9 +15,6 @@ try {
     $stmt = $handle->query("$sql");
     $row = $stmt->fetch();
     echo "$row[0] $row[1] $row[2]";
-    $conn = NULL;
-           
-} catch(PDOException $e) {
-  die("Oops. Something went wrong in the database.")
-}
+    $handle = NULL;
+} catch(Exception $e){die(print_r($e));}
 ?>
