@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
     <head>  
-        </head>    
+    </head>    
         <body>
 <?php 
 try{
@@ -11,12 +11,12 @@ try{
     $db = "IST604";
     $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT first_name, last_name FROM employee WHERE emp_id = '100'"); 
-    $stmt = $conn->query("sql");
+    $sql = ("SELECT first_name, last_name FROM employee WHERE emp_id = 100"); 
+    $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
-    echo "$row[0] $row[1] $row[2]";
+    echo "$row[0] $row[1]";
     $conn = NULL;
-}catch(Exception $e ){die(print_r($e));}
+}catch(Exception $e){die(print_r($e));}
 ?>
         </body>
 </html>
