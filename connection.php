@@ -1,20 +1,21 @@
 <?php
 
 //local server info
-$server = "phena.database.windows.net";
-$username = "senediak";
-$password = "ste11PHEN**";
-$db = "phena";
+
 
 //check connection
 
 try {
-    $handle = new PDO("sqlsrv:Server=$server;dbname=$db","$username", "$password");
-    $handle->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT * FROM employee");
-    $stmt = $handle->query("$sql");
+    $host = "phena.database.windows.net";
+    $user = "senediak";
+    $pwd = "ste11PHEN**";
+    $db = "phena";
+    $conn = new PDO("sqlsrv:Server = $host; Database = $db","$user", "$pwd");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = ("SELECT * FROM employee WHERE emp_id" = 100);
+    $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     echo "$row[0] $row[1] $row[2]";
-    $handle = NULL;
+    $conn = NULL;
 } catch(Exception $e){die(print_r($e));}
 ?>
