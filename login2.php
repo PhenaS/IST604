@@ -26,10 +26,9 @@ try{
     $sql = ("SELECT first_name, last_name FROM employee WHERE emp_id='{$_POST["EmployeeID"]}'"); 
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
-    echo "$row[0] $row[1]";
     $conn = NULL;
 }catch(Exception $e){die(print_r($e));}
 ?>
-        <p>Welcome!</p> <?php echo "$row[0] $row[1]"; ?>  
+        <p>Welcome! <?php echo "$row[0] $row[1]"; ?> </p>  
     </body>
 </html>
