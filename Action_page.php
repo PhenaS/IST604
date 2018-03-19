@@ -6,7 +6,7 @@
 <?php 
 $params = array($_POST['Username'], $_POST['Password']);
 
-host = "tcp:phena.database.windows.net,1433";
+$host = "tcp:phena.database.windows.net,1433";
 $user = "senediak";
 $pwd = "ste11PHEN**";
 $db = "IST604";
