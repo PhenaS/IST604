@@ -4,7 +4,7 @@
 <BODY>
 
 <?php 
-  echo _POST["EmployeeID"];
+  echo $_POST["EmployeeID"];
 ?>
 
 </BODY>
