@@ -10,12 +10,9 @@ $conn = sqlsrv_connect($serverName, $connectionOptions);
 $tsql= "Select first_name, emp_id FROM employee";
 $getResults= sqlsrv_query($conn, $tsql);
 echo ("Reading data from table" . PHP_EOL);
-
+echo $getrsults
 if ($getResults == FALSE)
     echo (sqlsrv_errors());
 
-while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
- echo ($row['first_name'] . " " . $row['emp_id'] . PHP_EOL);
-}
 sqlsrv_free_stmt($getResults);
 ?>
