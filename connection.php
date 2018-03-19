@@ -2,8 +2,8 @@
 
 //local server info
 $server = "tcp:phena.database.windows.net,1433";
-$username = senediak;
-$password = "ste11PHEN**";
+$username = root;
+$password = "";
 $db = "phena";
 
 //check connection
