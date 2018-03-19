@@ -11,11 +11,11 @@ $tsql= "Select first_name, emp_id FROM employee;";
 $getResults= sqlsrv_query($conn, $tsql);
 echo ("Reading data from table" . PHP_EOL);
 
-if ($getResults == FALSE)
+if ($getResults == FALSE) {
     echo (sqlsrv_errors());
-
-while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
- echo ($row['first_name'] . " " . $row['emp_id'] . PHP_EOL);
+} else {
+    echo $getresults
 }
+
 sqlsrv_free_stmt($getResults);
 ?>
