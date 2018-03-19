@@ -17,5 +17,7 @@ if ($getResults == FALSE) {
     echo $getresults
 }
 
+else 
 sqlsrv_free_stmt($getResults);
 ?>
+
