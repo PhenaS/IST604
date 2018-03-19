@@ -21,9 +21,25 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <p>SAW Staff Login</p>
         <form action="/action_page.php" method="post">
           <p><input class="w3-input w3-border" type="text" placeholder="EmployeeID" name="EmployeeID" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="PIN" name=PIN" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Password" name=Password" required></p>
           <button type="submit" class="w3-button w3-block w3-black">Submit</button>
         </form> 
       </div>
 </body>
 </html>
+
+<?php
+try {
+    $host = "tcp:phena.database.windows.net,1433";
+    $user = "senediak";
+    $pwd = "ste11PHEN**";
+    $db = "IST604";
+    $conn = new PDO("sqlsrv:Server = $host;Database = $db","$user", "$pwd");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = ("SELECT * FROM employee WHERE emp_id = 100");
+    $stmt = $conn->query("$sql");
+    $row = $stmt->fetch();
+    echo "$row[0] $row[1] $row[2]";
+    $conn = NULL;
+} catch(Exception $e){die(print_r($e));}
+?>
