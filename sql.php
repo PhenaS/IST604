@@ -7,7 +7,7 @@ $connectionOptions = array(
 );
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
-$tsql= "Select first_name, emp_id FROM employee";
+$tsql= "Select first_name, emp_id FROM employee;";
 $getResults= sqlsrv_query($conn, $tsql);
 echo ("Reading data from table" . PHP_EOL);
 
