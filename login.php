@@ -29,14 +29,18 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </html>
 
 <?php 
+
 $host = "tcp:phena.database.windows.net,1433";
 $user = "senediak";
 $pwd = "ste11PHEN**";
 $db = "IST604";
-
-$conn = sqlsrv_connect($host, $user, $pwd, $db); 
-$sql = "SELECT first_name, last_name FROM employee WHERE emp_id = '{$_POST["EmployeeID"]}' AND pwd = '{$_POST["Password"]}'"; 
-$stmt = sqlsrv_query($conn, $sql); 
+$conn = new PDO ("sqlsrv:Server = $host; Datbase = $db", $user, $pwd);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$sql = ("SELECT first_name, last_name FROM employee WHERE emp_id = 100"); 
+$stmt = $conn->query("sql");
+$row = $stmt->fetch();
+echo "$row[0] $row[1] $row[2]";
+$conn = NULL;
 
 if(sqlsrv_has_rows($stmt)) 
 { 
