@@ -37,7 +37,7 @@ $pwd = "ste11PHEN**";
 $db = "IST604";
 
 $conn = sqlsrv_connect($host, $user, $pwd, $db); 
-$sql = "SELECT * FROM employee WHERE emp_id = ?"; 
+$sql = "SELECT emp_id, pwd FROM employee WHERE emp_id = ?"; 
 $stmt = sqlsrv_query($conn, $sql, $params); 
 if(sqlsrv_has_rows($stmt)) 
 { 
