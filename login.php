@@ -27,3 +27,24 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       </div>
 </body>
 </html>
+
+<?php 
+$params = array($_POST['EmployeeID'], $_POST['Password']);
+
+$host = "tcp:phena.database.windows.net,1433";
+$user = "senediak";
+$pwd = "ste11PHEN**";
+$db = "IST604";
+
+$conn = sqlsrv_connect($host, $user, $pwd, $db); 
+$sql = "SELECT * FROM employee WHERE emp_id = ? and pwd = ?"; 
+$stmt = sqlsrv_query($conn, $sql, $params); 
+if(sqlsrv_has_rows($stmt)) 
+{ 
+    echo "Welcome."; 
+} 
+else 
+{ 
+    echo "Invalid password."; 
+} 
+?>
