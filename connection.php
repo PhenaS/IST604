@@ -9,7 +9,7 @@ $db = "phena";
 //check connection
 
 try {
-    $handle = PDO("sqlsrv:host=$server;dbname=$db","$username", "$password");
+    $handle = new PDO("sqlsrv:host=$server;dbname=$db","$username", "$password");
     $handle->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "connected";
 } catch(PDOException $e) {
