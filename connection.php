@@ -14,6 +14,5 @@ try {
     echo "connected";
 } catch(PDOException $e) {
   die("Oops. Something went wrong in the database.")
-  $e->getMessage();
 }
 ?>
