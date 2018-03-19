@@ -16,28 +16,26 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   
 <body> 
   <div class="w3-row-padding">
-      <div class="w3-col s4">
-        <h4>Solutions at Work Inc</h4>
-        <p>SAW Staff Login</p>
-        <form action="/action_page.php" method="post">
-          <p><input class="w3-input w3-border" type="text" placeholder="EmployeeID" name="EmployeeID" required></p>
-          <p><input class="w3-input w3-border" type="password" placeholder="Password" name="Password" required></p>
-          <button type="submit" class="w3-button w3-block w3-black">Submit</button>
+  <div class="w3-col s4">
+    <h4>Solutions at Work Inc</h4>
+    <p>SAW Staff Login</p>
+      <form action="/action_page.php" method="post">
+        <p><input class="w3-input w3-border" type="text" placeholder="EmployeeID" name="EmployeeID" required></p>
+        <p><input class="w3-input w3-border" type="password" placeholder="Password" name="Password" required></p>
+        <button type="submit" class="w3-button w3-block w3-black">Submit</button>
         </form> 
       </div>
 </body>
 </html>
 
 <?php 
-$params = $_POST["EmployeeID"];
-
 $host = "tcp:phena.database.windows.net,1433";
 $user = "senediak";
 $pwd = "ste11PHEN**";
 $db = "IST604";
 
 $conn = sqlsrv_connect($host, $user, $pwd, $db); 
-$sql = "SELECT emp_id, pwd FROM employee WHERE emp_id = '{?}'"; 
+$sql = "SELECT first_name, last_name FROM employee WHERE emp_id = '{$_POST["EmployeeID"]}' AND pwd = '{$_POST["Password"]}'"; 
 $stmt = sqlsrv_query($conn, $sql); 
 
 if(sqlsrv_has_rows($stmt)) 
