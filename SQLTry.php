@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
     <head>  
+        </head>    
         <body>
 <?php 
 try{
@@ -18,5 +19,4 @@ try{
 }catch(Exception $e ){die(print_r($e));}
 ?>
         </body>
-    </head>
 </html>
