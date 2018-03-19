@@ -5,8 +5,8 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = ("SELECT first_name, last_name FROM employee WHERE emp_id = '{$_POST[EmployeeID]}'");
     $stmt = $conn->query("$sql");
-    $row = $stmt->fetch();
-    echo "$row[0] $row[1] $row[2]";
+    $emp = $stmt->fetch();
+    echo "$emp[0] $emp[1] $emp[2]";
     $conn = NULL;
 } catch(Exception $e){die(print_r($e));}
 ?>
