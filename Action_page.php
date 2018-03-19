@@ -7,6 +7,6 @@ try {
     $stmt = $conn->query("$sql");
     $emp = $stmt->fetch();
     echo "$emp[0] $emp[1] $emp[2]";
-    $conn = NULL;
+    $emp = NULL;
 } catch(Exception $e){die(print_r($e));}
 ?>
