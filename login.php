@@ -25,8 +25,5 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           <button type="submit" class="w3-button w3-block w3-black">Submit</button>
         </form> 
       </div>
-<?php 
-  echo _POST["EmployeeID"];
-?>
 </body>
 </html>
