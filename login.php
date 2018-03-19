@@ -38,6 +38,14 @@ try{
     $row = $stmt->fetch();
     echo "$row[0] $row[1]";
     $conn = NULL;
+    if(sqlsrv_has_rows($stmt)) 
+{ 
+    echo "Welcome."; 
+} 
+else 
+{ 
+    echo "Invalid password."; 
+} 
 }catch(Exception $e){die(print_r($e));}
 ?>
 

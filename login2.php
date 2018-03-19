@@ -29,6 +29,6 @@ try{
     $conn = NULL;
 }catch(Exception $e){die(print_r($e));}
 ?>
-        <p>Welcome <?php echo "$row[0]"; ?> !</p>  
+        <p>Welcome <?php echo "$row[0]"; ?>!</p>  
     </body>
 </html>
