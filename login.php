@@ -19,7 +19,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-col s4">
     <h4>Solutions at Work Inc</h4>
     <p>SAW Staff Login</p>
-      <form id="login" action = #auth method="post">
+      <form id="login" name="login" method="post">
         <p><input class="w3-input w3-border" type="text" placeholder="EmployeeID" name="EmployeeID" required></p>
         <p><input class="w3-input w3-border" type="password" placeholder="Password" name="Password" required></p>
         <button type="submit" class="w3-button w3-block w3-black">Submit</button>
@@ -33,18 +33,18 @@ try{
     $db = "IST604";
     $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT first_name, last_name FROM employee WHERE emp_id='{$_POST["EmployeeID"]}'"); 
+    $sql = ("SELECT password, first_name, last_name FROM employee WHERE emp_id='{$_POST["EmployeeID"]}'"); 
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     echo "$row[0] $row[1]";
     $conn = NULL;
     }catch(Exception $e){die(print_r($e));}
-    ?>
-
-<div id="auth" name="auth" class="w3-row-padding">
-    <?php echo "Hello!"; ?>
-</div>    
     
+    if($_POST["Password"] == $row[0])
+    {
+	window.open(dashboard.php, 'newwindow');
+    }
+?>    
 </body>
 </html>
 
