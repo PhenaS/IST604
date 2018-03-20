@@ -42,6 +42,10 @@ try{
     }elseif($_POST["Password"] == $row[0]){
     header("Location: dashboard.php");
     }
+    else
+    {
+    "Incorrect ID or password";    
+    }
 ?>    
 </body>
 </html>
