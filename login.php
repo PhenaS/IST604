@@ -41,7 +41,7 @@ try{
     
     if(empty($_POST["Password"]))
     {
-        echo "no field filled out";
+    echo "no field filled out";
     }elseif($_POST["Password"] == $row[0]){
     header("Location: dashboard.php");
     }
