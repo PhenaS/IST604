@@ -27,10 +27,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
      
 <?php 
 try{
-    $host = "tcp:phena.database.windows.net,1433";
-    $user = "senediak";
-    $pwd = "ste11PHEN**";
-    $db = "IST604";
+    require('congif.php')
     $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = ("SELECT pwd, first_name, last_name FROM employee WHERE emp_id='{$_POST["EmployeeID"]}'"); 
