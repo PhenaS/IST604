@@ -11,13 +11,18 @@
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </style>
+
     <body class="w3-content" style="max-width:1200px">
+    <div class="w3-row-padding">
+    <div class="w3-col s4">
+        <h4>Solutions at Work Inc</h4>
+        <p>SAW Staff Login</p>
+    </div>
         <Ul>
             <li><a href="rating_dash.php">Employee Ratings</a></li>
             <li><a href="job_dash.php">Job Info</a></li>
             <li><a href="payroll_dash.php">Payroll</a></li>
             <li><a href="admin_dash.php">Administrative Reports</a></li>
         </Ul>
-
     </body>
 </html>
