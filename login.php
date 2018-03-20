@@ -43,7 +43,7 @@ try{
     {
     echo "Please enter your password"; 
     }else{
-    header("Location: dashboard.php");    
+    header("Location: checkauth.php");    
     }
         
 ?>    
