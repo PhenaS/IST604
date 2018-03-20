@@ -35,16 +35,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     $conn = NULL;
-          
-    if(empty($userpwd))
-    {
-    echo "Please enter your password";
-    }elseif($userpwd == $row[0])
-    {
-    header("Location: dashboard.php");
-    }
-?>   
 
+    echo $row[1];
+?>   
 </body>
 </html>
 
