@@ -36,10 +36,10 @@ try{
     $sql = ("SELECT pwd, first_name, last_name FROM employee WHERE emp_id='{$_POST["EmployeeID"]}'"); 
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
-    echo "$row[0] $row[1]";
     $conn = NULL;
     }catch(Exception $e){die(print_r($e));}
     
+    echo $row[0];
     if($_POST["Password"] == $row[0])
     {
 	window.open(dashboard.php, 'newwindow');
