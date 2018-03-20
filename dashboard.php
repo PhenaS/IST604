@@ -15,8 +15,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <body class="w3-content" style="max-width:1200px">
     <div class="w3-row-padding">
     <div class="w3-col s4">
-        <h4>Solutions at Work Inc</h4>
-        <p>SAW Staff Login</p>
+        <h3>Solutions at Work Inc</h3>
+        <p>Please choose what <br>
+           you'd like to do</p>
     </div>
         <Ul>
             <li><a href="rating_dash.php">Employee Ratings</a></li>
