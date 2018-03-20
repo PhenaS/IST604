@@ -44,7 +44,7 @@ try{
     }
     else
     {
-    "Incorrect ID or password";    
+    echo "Incorrect ID or password";    
     }
 ?>    
 </body>
