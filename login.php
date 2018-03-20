@@ -39,8 +39,10 @@ try{
     $conn = NULL;
     }catch(Exception $e){die(print_r($e));}
     
-    if($_POST["Password"] == $row[0])
+    if(empty($_POST["Password"]))
     {
+        echo "no field filled out";
+    }elseif($_POST["Password"] == $row[0]){
     header("Location: dashboard.php");
     }
 ?>    
