@@ -39,7 +39,13 @@ try{
     $conn = NULL;
     }catch(Exception $e){die(print_r($e));}
     
-
+    if(empty($emppwd))
+    {
+    echo "Please enter your password"; 
+    }else{
+    header("Location: dashboard.php");    
+    }
+        
 ?>    
 </body>
 </html>
