@@ -35,7 +35,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     $row = $stmt->fetch();
     $conn = NULL;
           
-    if(empty($_POST["Password"]))
+    if(empty($userpwd))
     {
     echo "Please enter your password";
     }elseif($userpwd == $row[0])
