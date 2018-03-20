@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <p>Hello World</p>
+        <?php
+        include'login.php';
+        ?>        
     </body>
 </html>
