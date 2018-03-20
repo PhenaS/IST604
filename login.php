@@ -24,28 +24,23 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <p><input class="w3-input w3-border" type="password" placeholder="Password" name="Password" required></p>
         <button type="submit" class="w3-button w3-block w3-black">Submit</button>
       </form> 
-      </div>
+     
 <?php 
-try{
-    $host = "tcp:phena.database.windows.net,1433";
-    $user = "senediak";
-    $pwd = "ste11PHEN**";
-    $db = "IST604";
-    $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    require_once('config.php');
+
     $sql = ("SELECT pwd, first_name, last_name FROM employee WHERE emp_id='{$_POST["EmployeeID"]}'"); 
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     $conn = NULL;
-    }catch(Exception $e){die(print_r($e));}
-    
+        
     if(empty($_POST["Password"]))
     {
     echo "Please enter your password";
     }elseif($_POST["Password"] == $row[0]){
     header("Location: dashboard.php");
     }
-?>    
+?>   
+  </div> 
 </body>
 </html>
 
