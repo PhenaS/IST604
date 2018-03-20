@@ -18,5 +18,5 @@ try{
     $conn = NULL;
 }catch(Exception $e){die(print_r($e));}
 ?>
-        </body>
+</body>
 </html>

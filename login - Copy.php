@@ -39,11 +39,10 @@ try{
     $conn = NULL;
     }catch(Exception $e){die(print_r($e));}
     
-    if(empty($_POST["Password"]))
+    echo $row[0];
+    if($_POST["Password"] == $row[0])
     {
-    echo "Please enter your password";
-    }elseif($_POST["Password"] == $row[0]){
-    header("Location: dashboard.php");
+	window.open(dashboard.php, 'newwindow');
     }
 ?>    
 </body>
