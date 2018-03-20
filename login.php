@@ -28,18 +28,21 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <?php 
 try{
     include 'config.php';
+    $emppwd = $_POST["Password"];
+    $empid = $_POST["EmployeeID"];
+    
     $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT pwd, first_name, last_name FROM employee WHERE emp_id='{$_POST["EmployeeID"]}'"); 
+    $sql = ("SELECT pwd, first_name, last_name FROM employee WHERE emp_id='$empid'"); 
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     $conn = NULL;
     }catch(Exception $e){die(print_r($e));}
     
-    if(empty($_POST["Password"]))
+    if(empty($emppwd))
     {
-    echo "no field filled out";
-    }elseif($_POST["Password"] == $row[0]){
+    echo "Please enter your ID and password";
+    }elseif($emppwd == $row[0]){
     header("Location: dashboard.php");
     }
     else
