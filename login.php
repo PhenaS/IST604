@@ -41,7 +41,7 @@ try{
     
     if($_POST["Password"] == $row[0])
     {
-	print "<script language="Javascript">document.location.href='page_b.php';</script>;
+    header("Location: dashboard.php");
     }
 ?>    
 </body>
