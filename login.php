@@ -27,7 +27,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
      
 <?php 
 try{
-    include 'config.php'
+    include 'config.php';
     $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = ("SELECT pwd, first_name, last_name FROM employee WHERE emp_id='{$_POST["EmployeeID"]}'"); 
