@@ -39,10 +39,9 @@ try{
     $conn = NULL;
     }catch(Exception $e){die(print_r($e));}
     
-    echo $row[0];
     if($_POST["Password"] == $row[0])
     {
-	window.open(dashboard.php, 'newwindow');
+	include ('dashboard.php');
     }
 ?>    
 </body>
