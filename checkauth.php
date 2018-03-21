@@ -19,7 +19,7 @@ try{
 if(!empty($_POST["employeeid"]) && !empty($_POST["password"])) {
         $empid = $_POST["employeeid"];
         $password = $_POST["password"];
-else{
+}else{
             header('Location: login.php');
      }
    
