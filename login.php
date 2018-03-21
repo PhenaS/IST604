@@ -25,28 +25,6 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <button type="submit" class="w3-button w3-block w3-black">Submit</button>
       </form> 
      
-<?php 
-try{
-    include 'config.php';
-    $emppwd = $_POST["Password"];
-    $empid = $_POST["EmployeeID"];
-    
-    $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT pwd, first_name, last_name FROM employee WHERE emp_id='$empid'"); 
-    $stmt = $conn->query("$sql");
-    $row = $stmt->fetch();
-    $conn = NULL;
-    }catch(Exception $e){die(print_r($e));}
-    
-    if(empty($emppwd))
-    {
-    echo "Please enter your password"; 
-    }else{
-    header("Location: checkauth.php");    
-    }
-        
-?>    
 </body>
 </html>
 
