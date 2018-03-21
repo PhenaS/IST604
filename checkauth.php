@@ -5,7 +5,7 @@ if($emppwd == $row[0])
 {
         session_start();
         $_SESSION['sid']=session_id();
-        header("location:dashboard.php");
+        echo $row[0]
 }
 else
 {
