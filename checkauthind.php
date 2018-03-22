@@ -19,7 +19,7 @@ if(!empty($_POST["Username"]) && !empty($_POST["PIN"])) {
             header('Location: login.php');
      }
    
-if("$password" == "$row[0]") {
+if("pin" == "$row[1]") {
   session_start();
   $_SESSION["authenticated"] = 'true';
   header('Location: dashboard.php');
