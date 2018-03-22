@@ -5,7 +5,7 @@ try{
     
     $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT pwd, first_name, last_name FROM employee WHERE emp_id= '" . $_POST["EmployeeID"] . "'"); 
+    $sql = ("SELECT pwd, emp_id, first_name, last_name FROM employee WHERE emp_id= '" . $_POST["EmployeeID"] . "'"); 
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     $conn = NULL;
