@@ -16,7 +16,7 @@ if(!empty($_POST["Username"]) && !empty($_POST["PIN"])) {
         $indun = $_POST["Username"];
         $pin = $_POST["PIN"];
 }else{
-            header('Location: login.php');
+            header('Location: index.php');
      }
    
 if("pin" == "$row[1]") {
