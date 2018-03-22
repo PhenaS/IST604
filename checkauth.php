@@ -5,16 +5,16 @@ try{
     
     $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT pwd, first_name, last_name FROM employee WHERE emp_id= '" . $_POST['employeeid'] . "'"); 
+    $sql = ("SELECT pwd, first_name, last_name FROM employee WHERE emp_id= '" . $_POST["Employeeid"] . "'"); 
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     $conn = NULL;
     }catch(Exception $e){die(print_r($e));}
 
 
-if(!empty($_POST["employeeid"]) && !empty($_POST["password"])) {
-        $empid = $_POST["employeeid"];
-        $password = $_POST["password"];
+if(!empty($_POST["EmployeeID"]) && !empty($_POST["Password"])) {
+        $empid = $_POST["EmployeeID"];
+        $password = $_POST["Password"];
 }else{
             header('Location: login.php');
      }
