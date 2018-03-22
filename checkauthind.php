@@ -5,7 +5,7 @@ try{
     
     $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT username, pin FROM employee WHERE username= '" . $_POST["Username"] . "'"); 
+    $sql = ("SELECT username, pin FROM individual WHERE username= '" . $_POST["Username"] . "'"); 
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     $conn = NULL;
