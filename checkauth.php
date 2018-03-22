@@ -27,5 +27,7 @@ if($empid == $row[1] && $password == row[0]) {
         echo "info";
         echo $row[1]; 
         echo $row[0];
+        echo $empid;
+        echo $password;
        }
 ?>    
