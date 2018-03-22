@@ -2,7 +2,7 @@
 <html>
 <title>Solutions At Work Inc.</title>
 <?php
-if (!isset($_SESSION['authorized']) || $_SESSION['authorized'] == false) {
+if ($_SESSION['authorized'] == false) {
   header ("Location: login.php");
 }
 ?>
