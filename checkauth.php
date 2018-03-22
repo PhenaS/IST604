@@ -16,7 +16,7 @@ if(!empty($_POST["employeeid"]) && !empty($_POST["password"])) {
         $empid = $_POST["employeeid"];
         $password = $_POST["password"];
 }else{
-            header('Location: index.php');
+            header('Location: login.php');
      }
    
 if($username == $row[1] && $password == row[0]) {
