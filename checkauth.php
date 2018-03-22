@@ -24,6 +24,7 @@ if($empid == $row[1] && $password == row[0]) {
   $_SESSION["authenticated"] = 'true';
   header('Location: dashboard.php');
 }else {
-        header('Location: login.php');
+        echo $row[1]; 
+        echo $row[0];
        }
 ?>    
