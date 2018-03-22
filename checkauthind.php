@@ -24,7 +24,7 @@ if("$pin" == "$row[1]") {
   $_SESSION["authenticated"] = 'true';
   header('Location: dashboard.php');
   echo $row[1];
-  echo $pin
+  echo $pin;
 }else {
   header('Location: login.php');
        }
