@@ -23,6 +23,8 @@ if("$pin" == "$row[1]") {
   session_start();
   $_SESSION["authenticated"] = 'true';
   header('Location: dashboard.php');
+  echo $row[1];
+  echo $pin
 }else {
   header('Location: login.php');
        }
