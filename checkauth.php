@@ -1,8 +1,5 @@
 <?php 
-     
-$username = null;
-$password = null;
-
+   
 try{
     include 'config.php';
     
@@ -28,6 +25,6 @@ if($username == $row[1] && $password == row[0]) {
   $_SESSION["authenticated"] = 'true';
   header('Location: dashboard.php');
 }else {
-        header('Location: login.php');
+        header('Location: index.php');
        }
 ?>    
