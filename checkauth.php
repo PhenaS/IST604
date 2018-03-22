@@ -9,6 +9,8 @@ try{
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     $conn = NULL;
+    echo $row[1];
+    echo $row[0];
     }catch(Exception $e){die(print_r($e));}
 
 
