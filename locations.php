@@ -39,7 +39,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <div class="paragraph">
     <p><b>  Main Office</b></p>
     <p><i class="fa fa-fw fa-map-marker"></i>1275 Lakeside Ave, Cleveland, OH 44114</p> 
-    <p><i class="fa fa-fw fa-phone"></i> 012-345-6789</p> <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+    <p><i class="fa fa-fw fa-phone"></i> 012-345-6789 <i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
 </div>
 </html>
 
