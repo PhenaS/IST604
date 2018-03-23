@@ -5,7 +5,7 @@ try{
     
     $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT username, pin, first_name FROM individual WHERE Username= '" . $_POST["Username"] . "';"); 
+    $sql = ("SELECT username, pin, first_name FROM individual WHERE username = '" . $_POST["Username"] . "'"); 
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     $conn = NULL;
@@ -19,13 +19,10 @@ if(!empty($_POST["Username"]) && !empty($_POST["PIN"])) {
             header('Location: individuallogin.php');
      }
    
-if($pin == $row[1]) {
+if("$pin" == "$row[1]") {
   session_start();
   $_SESSION["authenticated"] = 'true';
-  echo $row[1];
-  echo $row[0];
-  echo $username;
-  echo $pin;         
+  header('Location: dashboard.php');
 }else {
   header('Location: login.php');
        }
