@@ -24,6 +24,7 @@ if("$pin" == "$sow[1]") {
   $_SESSION["authenticated"] = 'true';
   header('Location: dashboard.php');
 }else {
-  header('Location: login.php');
+  header('Location:#');
+  echo "Incorrect Username or PIN";
        }
 ?>    
