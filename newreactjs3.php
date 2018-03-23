@@ -13,6 +13,5 @@ try{
     
     echo $_POST["Username"];
     echo $_POST["PIN"];
-    echo $row[1];
-    echo $row[2];
+
     ?>
