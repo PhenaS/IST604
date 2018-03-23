@@ -22,9 +22,9 @@ if(!empty($_POST["Username"]) && !empty($_POST["PIN"])) {
 if("$pin" == "$sow[1]") {
   session_start();
   $_SESSION["authenticated"] = 'true';
-  header('Location: dashboard.php');
+  header('Location: individualdash.php');
 }else {
-  header('Location:individualdash.php');
+  header('Location:individuallogin.php');
   echo "Incorrect Username or PIN";
        }
 ?>    
