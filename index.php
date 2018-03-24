@@ -102,10 +102,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <h4>About</h4>
         <p><a href="#">About us</a></p>
         <p><a href="https://www.dol.gov/whd/FOH/ch64/index.htm" target="_blank">WHD FLSA chapter 64</a></p>       
-        <p><a href="#">Commensurate wages</a></p>
+        <p><a href="https://www.dol.gov/whd/regs/compliance/whdfs39b.pdf">Commensurate wages</a></p>
         <p><a href="locations.php">Our Locations</a></p> 
-        <p><a href="#">We're hiring</a></p>
-         <p><a href="#">Help</a></p>
+        <p><a href="jobpage.php">We're hiring</a></p>
+         <p><a href="helppage.php">Help</a></p>
       </div>
 
       <div class="w3-col s4 w3-justify">
