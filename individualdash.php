@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html>
+    <?php 
+   
+try{
+    include 'config.php';
+    
+    $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = ("SELECT username, pin, first_name FROM individual WHERE username = '" . $_POST["Username"] . "'"); 
+    $stmt = $conn->query("$sql");
+    $sow = $stmt->fetch();
+    $conn = NULL;
+    }catch(Exception $e){die(print_r($e));}
+?>
+    
 <title>Solutions At Work Inc.</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +31,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide"><b>Welcome</b></h3>
+    <h3 class="w3-wide"><b>SAW</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
     <a href="individuallogin.php" class="w3-bar-item w3-button">Individual Login</a>
@@ -66,7 +80,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   
    <!-- Subscribe section -->
   <div class="w3-container w3-black w3-padding-32">
-    <h1>Welcome ?</h1>
+    <h1>Welcome <?php echo $row[2];?> </h1>
     
   </div>
   
