@@ -88,7 +88,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
       <div class="w3-col s4">
-
+          <H2> You made $102.10 last pay period </H2>
+          <H3> You seem to be best at custodial work </H3>
+          <H3> You can work on toilets to do better </H3>
+              
 
       <div class="w3-col s4">
 
