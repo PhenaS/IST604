@@ -67,9 +67,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
     <p class="w3-left">Solutions At Work Inc</p>
-    <p class="w3-right">
-      <i class="fa fa-search"></i>
-    </p>
+    <p class="w3-right"></p>
   </header>
 
   <div class="w3-display-container w3-container">
@@ -83,7 +81,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h1>Welcome <?php echo $sow[2];?>! </h1>
     
       
-          <H3> You made < span style="color:green;" > you< /span> last pay period </H3>
+          <H3> You made $102 last pay period </H3>
           <H3> You seem to be best at custodial work </H3>
           <H3> You can work on toilets to do better </H3>
     
