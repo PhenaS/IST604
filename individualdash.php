@@ -44,9 +44,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <a href="login.php" class="w3-bar-item w3-button">Accountants</a>
      </div>
   </div>
-  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
-  <a href="donations.php"  class="w3-bar-item w3-button w3-padding">Donate</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+    <a href="donations.php"  class="w3-bar-item w3-button w3-padding">Donate</a>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -61,52 +60,42 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:250px">
 
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
+<!-- Push down content on small screens -->
+<div class="w3-hide-large" style="margin-top:83px"></div>
   
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">Solutions At Work Inc</p>
-    <p class="w3-right"></p>
-  </header>
+<!-- Top header -->
+<header class="w3-container w3-xlarge">
+  <p class="w3-left">Solutions At Work Inc</p>
+  <p class="w3-right"></p>
+</header>
 
-  <div class="w3-display-container w3-container">
-    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-        <br>
-    </div>
-  </div>
+<div class="w3-display-container w3-container">
+<div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+</div>
+</div>
  
-   <!-- Welcome section -->
-  <div class="w3-container w3-black w3-padding-32">
+<!-- Welcome section -->
+<div class="w3-container w3-black w3-padding-32">
     <h1>Welcome <?php echo $sow[2];?>! </h1>
          
-          <H3><span style="color:#b0e0e6">You made $102 last pay period </span></H3>
-          <H3> You seem to be best at custodial work </H3>
-          <H3> You can work on toilets to do better </H3>
-    
-  </div>
-  
-  <!-- Footer -->
-  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
-    <div class="w3-row-padding">
-      <div class="w3-col s4">
-
-              
-
-      <div class="w3-col s4">
-
-      </div>
-
-      <div class="w3-col s4 w3-justify">
-
-
-      </div>
-    </div>
-  </footer>
-  
-
-  <!-- End page content -->
+    <h3><span style="color:#b0e0e6">You made $102 last pay period </span></h3>
+    <H3> You seem to be best at custodial work </H3>
+    <H3> You can work on toilets to do better </H3>
 </div>
+  
+<!-- Footer -->
+<footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+        <div class="w3-col s4">
+            <div class="w3-col s4">
+            </div>
+        <div class="w3-col s4 w3-justify">
+        </div>
+        </div>
+    </div>    
+</footer>
+<!-- End page content -->
+    
 
 <!-- Newsletter Modal -->
 <div id="newsletter" class="w3-modal">
@@ -147,6 +136,5 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 </script>
-
 </body>
 </html>

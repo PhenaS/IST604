@@ -12,8 +12,6 @@ try{
     }catch(Exception $e){die(print_r($e));}
     
     
-    echo $sow[2];
-       
     
 ?>
 
