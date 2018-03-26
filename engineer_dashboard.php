@@ -3,6 +3,21 @@
 <title>Engineer Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+p.speech {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #fff;
+  border: 8px solid #666;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}  
 <body>
 
 <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
@@ -18,11 +33,9 @@
 <div>
   <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
   <div class="w3-container">
-    <h1>Animated Sidebar</h1>
-    <p>Click on the "hamburger menu" to slide in the side navigation.</p>
-    <p>W3.CSS provide the following animation classes if you want to experiment for yourself:</p>
-    <p>w3-animate-left, w3-animate-top, w3-animate-bottom, w3-animate-right, w3-animate-opacity, w3-animate-zoom</p>
-  </div>
+    <h1>Engineer Dashboard</h1>
+    <p class="speech">New job arriving at Euclid AAC Today</p>
+      </div>
 </div>
 
 <script>
