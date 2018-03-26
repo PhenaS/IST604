@@ -13,15 +13,33 @@
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
 
-<div style="background-color: black">   
+ 
   
   <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
-  <div class="w3-container">
-    <h1>Animated Sidebar</h1>
-    <p>Click on the "hamburger menu" to slide in the side navigation.</p>
-    <p>W3.CSS provide the following animation classes if you want to experiment for yourself:</p>
-    <p>w3-animate-left, w3-animate-top, w3-animate-bottom, w3-animate-right, w3-animate-opacity, w3-animate-zoom</p>
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Welcome </h1>       
+          <H3><span style="color:#b0e0e6">You made $102 last pay period </span></H3>
+          <H3> You seem to be best at custodial work </H3>
+          <H3> You can work on toilets to do better </H3>
   </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+
+              
+
+      <div class="w3-col s4">
+
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+
+
+      </div>
+    </div>
+  </footer>
 </div>
 </div>
 <script>
