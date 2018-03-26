@@ -6,7 +6,7 @@
 <style>
 p.speech {
   position: relative;
-  width: 200px;
+  width: 1200px;
   height: 100px;
   text-align: center;
   line-height: 100px;
