@@ -23,7 +23,7 @@
     <p>w3-animate-left, w3-animate-top, w3-animate-bottom, w3-animate-right, w3-animate-opacity, w3-animate-zoom</p>
   </div>
 </div>
-
+</div>
 <script>
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
