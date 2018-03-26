@@ -41,27 +41,11 @@
       </div>
 
       <div class="w3-col s4">
-        <h4>About</h4>
-        <p><a href="#">About us</a></p>
-        <p><a href="https://www.dol.gov/whd/FOH/ch64/index.htm" target="_blank">WHD FLSA chapter 64</a></p>       
-        <p><a href="https://www.dol.gov/whd/regs/compliance/whdfs39b.pdf">Commensurate wages</a></p>
-        <p><a href="locations.php">Our Locations</a></p> 
-        <p><a href="jobpage.php">We're hiring</a></p>
-         <p><a href="helppage.php">Help</a></p>
-      </div>
-
-      <div class="w3-col s4 w3-justify">
-        <h4>Find us</h4>
-        <p><i class="fa fa-fw fa-map-marker"></i> Solutions at Work </p>
-        <p><i class="fa fa-fw fa-phone"></i> 012-345-6789</p>
-        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
-        <br>
-        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
-        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
-        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
-        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
-        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
-      </div>
+        <h4>About SAWinc.azurewebsites.net</h4>
+        <p>Created by Phena Senediak for IST604</p>
+        <p>Written in Netbeans using HTML, PHP, and JavaScript</p>
+        <p>Web App and SQL Server Datbase Hosted in MS Azure</p>
+        <p>Stylesheets by W3</p>
     </div>
   </footer>
 
