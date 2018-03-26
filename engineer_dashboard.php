@@ -15,15 +15,12 @@
 
  
   
-  <div class="w3-container w3-padding-32 w3-black" >
-      <div style="color:#DAF7A6;"><h1>Welcome <?php echo $sow[2];?>! </h1></div>
-          <H3><span style="color:#FF3333;">You made $102 last pay period </span></H3>          
-          <H3><span style="color:#CC6699;">You made $102 last pay period </span></H3>
-          <H3><span style="color:#9575cd;">You made $102 last pay period </span></H3>
-          <H3><span style="color:#b39ddb;">You made $102 last pay period </span></H3>
-          <H3><span style="color:#00bcd4;">You made $102 last pay period </span></H3>
-  </div>
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
   
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
 
               
 
