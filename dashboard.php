@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<title>Solutions At Work Inc.</title>
+<title>Solutions At Work Inc. Employee Dashboard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -93,8 +93,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
       <div class="w3-col s4">
-        <h4>Interested in working with us?</h4>
-        <p>Leave us a message and we'll contact you</p>
+        <h4>Problems, Questions, or Comments?</h4>
+        <p>Let us know below</p>
         <form action="/action_page.php" target="_blank">
           <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
