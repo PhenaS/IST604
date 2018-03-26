@@ -21,8 +21,8 @@
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
       <div class="w3-col s4">
-        <h4>Interested in working with us?</h4>
-        <p>Leave us a message and we'll contact you</p>
+        <h4>Problems, Questions, or Comments?</h4>
+        <p>Let us know so we can improve</p>
         <form action="/action_page.php" target="_blank">
           <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
