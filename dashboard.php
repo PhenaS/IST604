@@ -45,16 +45,19 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
+   <div class="w3-container w3-black w3-padding-32">
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
     <p class="w3-left">Solutions At Work Inc</p>
     <p class="w3-right"></p>
   </header>
+    
+
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+
 
   <div class="w3-display-container w3-container">
     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
