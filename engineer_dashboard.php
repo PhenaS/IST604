@@ -3,6 +3,7 @@
 <title>Engineer Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
 p.speech {
   position: relative;
   width: 200px;
@@ -18,6 +19,7 @@ p.speech {
   -moz-box-shadow: 2px 2px 4px #888;
   box-shadow: 2px 2px 4px #888;
 }  
+  </style>
 <body>
 
 <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
