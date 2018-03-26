@@ -158,8 +158,8 @@ function myAccFunc() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
+// Click on the link on page load to open the accordion for demo purposes
+document.getElementById("myBtn1").click();
 // Script to open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
@@ -170,6 +170,20 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
+  
+  document.getElementById("myBtn2").click();
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+  
+  
 </script>
 
 </body>
