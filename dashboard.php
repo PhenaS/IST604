@@ -19,21 +19,21 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
     <h3 class="w3-wide"><b>SAW</b></h3>
   </div>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBt1n">
-      Ratings <i class="fa fa-caret-down"></i>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn1">
+      Jobs <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="login.php" class="w3-bar-item w3-button">Incoming Jobs</a>
       <a href="login.php" class="w3-bar-item w3-button">Out of Date Jobs</a>
       <a href="login.php" class="w3-bar-item w3-button">Job Info Entry</a>
      </div>
-         <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-        Jobs <i class="fa fa-caret-down"></i>
+         <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+        Ratings <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="login.php" class="w3-bar-item w3-button "></a>
-      <a href="login.php" class="w3-bar-item w3-button">Engineers</a>
-      <a href="login.php" class="w3-bar-item w3-button">Accountants</a>
+      <a href="login.php" class="w3-bar-item w3-button ">Ratings Expiration</a>
+      <a href="login.php" class="w3-bar-item w3-button">Ratings Tool</a>
+      <a href="login.php" class="w3-bar-item w3-button">Analog Ratings Entry</a>
      </div>
   </div>
 </nav>
