@@ -13,7 +13,7 @@
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
 
-<div style="background-color: #E0E0FB">   
+<div style="background-color: black">   
   
   <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
   <div class="w3-container">
