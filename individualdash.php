@@ -77,10 +77,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
  
    <!-- Welcome section -->
-  <div class="w3-container w3-padding-32" >
+  <div class="w3-container w3-padding-32 w3-black" >
       <div style="color:#DAF7A6;"><h1>Welcome <?php echo $sow[2];?>! </h1></div>
          
-          <H3><span style="">You made $102 last pay period </span></H3>
+    
           <H3><span style="color:#FF3333;">You made $102 last pay period </span></H3>          
           <H3><span style="color:#CC6699;">You made $102 last pay period </span></H3>
           <H3><span style="color:#9575cd;">You made $102 last pay period </span></H3>
