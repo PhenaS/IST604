@@ -134,8 +134,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
         var options = {
           chart: {
-            title: 'Company Performance',
-            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+            title: 'Your Performance',
+            subtitle: '% Productivity on Your Most Recent 90/10 by Task',
           },
           bars: 'horizontal' // Required for Material Bar Charts.
         };
