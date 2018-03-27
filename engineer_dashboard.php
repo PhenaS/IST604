@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html>
+    <?php 
+   
+try{
+    include 'config.php';
+    
+    $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = ("SELECT first_name, last_name FROM employee WHERE username = '" . $_POST["EmployeeID"] . "'"); 
+    $stmt = $conn->query("$sql");
+    $sow = $stmt->fetch();
+    $conn = NULL;
+    }catch(Exception $e){die(print_r($e));}
+?>
 <title>SAW INC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -19,7 +32,7 @@
   <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
   
  <div class="w3-container w3-padding-32 w3-black" >
-     <div style="color:whitesmoke;"><h1>Welcome! </h1></div>
+     <div style="color:whitesmoke;"><h1>Welcome <?php echo $sow[0];?> ! </h1></div>
   </div>
   
   <!-- Footer -->
@@ -37,7 +50,7 @@
       </div>
 
       <div class="w3-col s4">
-        <h4>About SAWinc.azurewebsites.net</h4>
+        <h4>About This Website</h4>
         <p>Created by Phena Senediak for IST604</p>
         <p>Written in Netbeans using HTML, PHP, and JavaScript</p>
         <p>Web App and SQL Server Datbase Hosted in MS Azure</p>
