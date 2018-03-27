@@ -105,7 +105,41 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </head>
   <body>
     <div id="curve_chart" style="width: 900px; height: 500px"></div>
- 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', '%Productivity'],
+          ['Vaccuum', 80],
+          ['Dust Mop', 30],
+          ['Wet Mop', 33],
+          ['Tables', 90],
+          ['Toilets', 50],
+          ['Sinks', 80],
+          ['Windows', 20],
+          ['Trash Bags', 18]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          },
+          bars: 'horizontal' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="barchart_material" style="width: 900px; height: 500px;"></div>
+  </body> 
    <!-- Welcome section -->
   <div class="w3-container w3-padding-32 w3-black" >
       <div style="color:#DAF7A6;"><h1>Welcome <?php echo $sow[2];?>! </h1></div>
