@@ -75,6 +75,36 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <br>
     </div>
   </div>
+  
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Pay Rate'],
+          ['Mar 2016',  3.33],
+          ['Aug 2016',  4.08],
+          ['Mar 2017',  4.25],
+          ['Aug 2017',  4.10],
+          ['Mar 2018',  4.40]
+        ]);
+
+        var options = {
+          title: 'Your Pay Rate History',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
  
    <!-- Welcome section -->
   <div class="w3-container w3-padding-32 w3-black" >
