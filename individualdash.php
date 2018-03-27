@@ -44,7 +44,6 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <a href="login.php" class="w3-bar-item w3-button">Accountants</a>
      </div>
   </div>
-  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
   <a href="donations.php"  class="w3-bar-item w3-button w3-padding">Donate</a>
 </nav>
@@ -102,7 +101,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         chart.draw(data, options);
       }
     </script>
-  </head>
+  </head>  
+      <div class="w3-container w3-padding-32 w3-black" >
+      <div style="color:#DAF7A6;"><h1>Welcome <?php echo $sow[2];?>! </h1></div>
+         
+    
+          <H3><span style="color:#FF3333;">You made $102 last pay period </span></H3>          
+          <H3><span style="color:#CC6699;">You made $102 last pay period </span></H3>
+          <H3><span style="color:#9575cd;">You made $102 last pay period </span></H3>
+          <H3><span style="color:#b39ddb;">You made $102 last pay period </span></H3>
+          <H3><span style="color:#00bcd4;">You made $102 last pay period </span></H3>
+  </div>
   <body>
     <div id="curve_chart" style="width: 900px; height: 500px"></div>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -141,16 +150,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <div id="barchart_material" style="width: 900px; height: 500px;"></div>
   </body> 
    <!-- Welcome section -->
-  <div class="w3-container w3-padding-32 w3-black" >
-      <div style="color:#DAF7A6;"><h1>Welcome <?php echo $sow[2];?>! </h1></div>
-         
-    
-          <H3><span style="color:#FF3333;">You made $102 last pay period </span></H3>          
-          <H3><span style="color:#CC6699;">You made $102 last pay period </span></H3>
-          <H3><span style="color:#9575cd;">You made $102 last pay period </span></H3>
-          <H3><span style="color:#b39ddb;">You made $102 last pay period </span></H3>
-          <H3><span style="color:#00bcd4;">You made $102 last pay period </span></H3>
-  </div>
+
   
   <!-- Footer -->
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
