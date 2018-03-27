@@ -18,7 +18,7 @@ try{
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
-<div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
+<div class="w3-sidebar w3-bar-block w3-grey w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
   onclick="w3_close()">Close &times;</button>
   <a href="#" class="w3-bar-item w3-button">View Expiring Rates</a>
