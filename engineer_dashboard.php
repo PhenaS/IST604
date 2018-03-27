@@ -20,8 +20,7 @@
   
  <div class="w3-container w3-padding-32 w3-black" >
      <div style="color:whitesmoke;"><h1>Welcome! </h1></div>
-     <div style="color:whitesmoke;"><h1>Please choose what you'd like to do on the sidebar </h1></div>
- </div>
+  </div>
   
   <!-- Footer -->
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
