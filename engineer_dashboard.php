@@ -8,13 +8,14 @@
 <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
   onclick="w3_close()">Close &times;</button>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">View Expiring Rates</a>
+  <a href="#" class="w3-bar-item w3-button">View Outdated Jobs</a>
+  <a href="#" class="w3-bar-item w3-button">Enter Time Study Info</a>
+  <a href="#" class="w3-bar-item w3-button">View Current Rates</a>
+  <a href="#" class="w3-bar-item w3-button">View Current Job Info</a>
+  <a href="#" class="w3-bar-item w3-button">View Historical Hourly Rates</a>
+  <a href="#" class="w3-bar-item w3-button">View Historical Piece Rates</a>
 </div>
-
- 
-  
   <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
   
  <div class="w3-container w3-padding-32 w3-black" >
