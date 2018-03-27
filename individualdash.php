@@ -107,10 +107,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
          
     
           <H3><span style="color:#FF3333;">You made $102 last pay period </span></H3>          
-          <H3><span style="color:#CC6699;">You made $102 last pay period </span></H3>
-          <H3><span style="color:#9575cd;">You made $102 last pay period </span></H3>
-          <H3><span style="color:#b39ddb;">You made $102 last pay period </span></H3>
-          <H3><span style="color:#00bcd4;">You made $102 last pay period </span></H3>
+          <H3><span style="color:#CC6699;">You currently make $4.40 per hour </span></H3>
+          <H3><span style="color:#9575cd;">You seem to be best at cleaning tables </span></H3>
+          <H3><span style="color:#b39ddb;">You could use the most work on changing trash bags </span></H3>
+          <H3><span style="color:#00bcd4;">You will be rated again in February 2018 </span></H3>
   </div>
   <body>
     <div id="curve_chart" style="width: 900px; height: 500px"></div>
@@ -155,17 +155,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Footer -->
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
+      <div class="w3-col s4">           
       <div class="w3-col s4">
-
-              
-
-      <div class="w3-col s4">
-
-      </div>
-
+    </div>
       <div class="w3-col s4 w3-justify">
-
-
       </div>
     </div>
   </footer>
