@@ -7,15 +7,16 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
+          ['Month', 'Pay Rate'],
+          ['Mar 2018',  4.40],
+          ['Aug 2017',  4.10],
+          ['Mar 2017',  4.25],
+          ['Aug 2016',  4.08],
+          ['Mar 2016',  3.33]
         ]);
 
         var options = {
-          title: 'Company Performance',
+          title: 'Your Pay Rate History',
           curveType: 'function',
           legend: { position: 'bottom' }
         };
