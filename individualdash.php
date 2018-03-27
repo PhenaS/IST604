@@ -34,14 +34,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h3 class="w3-wide"><b>SAW</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="individuallogin.php" class="w3-bar-item w3-button">Individual Login</a>
+    <a href="individuallogin.php" class="w3-bar-item w3-button">Your Employee Info</a>
     <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      Staff Login <i class="fa fa-caret-down"></i>
+      Full History <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Staff</a>
-      <a href="login.php" class="w3-bar-item w3-button">Engineers</a>
-      <a href="login.php" class="w3-bar-item w3-button">Accountants</a>
+      <a href="" class="w3-bar-item w3-button w3-light-grey">Paychecks</a>
+      <a href="" class="w3-bar-item w3-button">Pieces Produced</a>
+      <a href="" class="w3-bar-item w3-button">Hourly Rates</a>
      </div>
   </div>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
@@ -106,7 +106,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <div style="color:#DAF7A6;"><h1>Welcome <?php echo $sow[2];?>! </h1></div>
          
     
-          <H3><span style="color:#FF3333;">You made $102 last pay period </span></H3>          
+          <H3><span style="color:#FF3333;">You made $256 last pay period before taxes </span></H3>          
           <H3><span style="color:#CC6699;">You currently make $4.40 per hour </span></H3>
           <H3><span style="color:#9575cd;">You seem to be best at cleaning tables </span></H3>
           <H3><span style="color:#b39ddb;">You could use the most work on changing trash bags </span></H3>
