@@ -32,14 +32,14 @@ try{
   <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
   
  <div class="w3-container w3-padding-32 w3-black" >
-     <div style="color:whitesmoke;"><h1>Welcome <?php echo $sow[0];?> ! </h1></div>
+     <div style="color:whitesmoke;"><h1>Hi there <?php echo $sow[0];?>! </h1></div>
   </div>
   
   <!-- Footer -->
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
       <div class="w3-col s4">
-        <h4>Problems, questions, comments, or requests? Let us know below</h4>
+        <h4>Problems, questions, comments, or requests? <br> Let us know below</h4>
         <form action="/action_page.php" target="_blank">
           <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
