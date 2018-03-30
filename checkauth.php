@@ -19,7 +19,7 @@ if(!empty($_POST["EmployeeID"]) && !empty($_POST["Password"])) {
             header('Location: login.php');
      }
    
-if("$password" == "$row[0]") {
+if($password == $row[0]) {
   session_start();
   $_SESSION["authenticated"] = 'true';
   header('Location: dashboard.php');
