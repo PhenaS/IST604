@@ -24,6 +24,8 @@ if($password == $row[0]) {
   $_SESSION["authenticated"] = 'true';
   header('Location: dashboard.php');
 }else {
+  session_start();
+  $_SESSION["authenticated"] = 'false';
   header('Location: login.php');
        }
 ?>    
