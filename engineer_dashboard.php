@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <?php 
-   
-try{
-    include 'config.php';
-    
-    $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT first_name, last_name FROM employee WHERE emp_id = '" . $_POST["EmployeeID"] . "'"); 
-    $stmt = $conn->query("$sql");
-    $sow = $stmt->fetch();
-    $conn = NULL;
-    }catch(Exception $e){die(print_r($e));}
-?>
+<?php 
+ 
+
 <title>SAW INC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -32,7 +22,7 @@ try{
   <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
   
  <div class="w3-container w3-padding-32 w3-black" >
-     <div style="color:whitesmoke;"><h1>Hi there <?php echo $sow[0];?>! <br> </h1></div>
+     <div style="color:whitesmoke;"><h1>Hi there <?php echo $_SESSION["name"] ?>! <br> </h1></div>
      <div style="color:whitesmoke;"><h3> Use the sidebar to navigate through this site <br> </h3></div>
   </div>
   
