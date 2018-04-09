@@ -22,7 +22,7 @@ if(!empty($_POST["EmployeeID"]) && !empty($_POST["Password"])) {
 if($password == $row[0]) {
   session_start();
   $_SESSION["authenticated"] = 'true';
-  header('Location: dashboard.php');
+  header('Location: engineer_dashboard.php');
 }else {
   session_start();
   $_SESSION["authenticated"] = 'false';
