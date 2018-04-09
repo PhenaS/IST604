@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <?php 
-   
-try{
-    include 'config.php';
-    
-    $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = ("SELECT username, pin, first_name FROM individual WHERE username = '" . $_POST["Username"] . "'"); 
-    $stmt = $conn->query("$sql");
-    $sow = $stmt->fetch();
-    $conn = NULL;
-    }catch(Exception $e){die(print_r($e));}
-?>
     
 <title>Solutions At Work Inc.</title>
 <meta charset="UTF-8">
@@ -103,7 +90,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </script>
   </head>  
       <div class="w3-container w3-padding-32 w3-black" >
-      <div style="color:#DAF7A6;"><h1>Welcome <?php echo $sow[2];?>! </h1></div>
+      <div style="color:#DAF7A6;"><h1>Welcome <?php session_start();
+                                                    echo $_SESSION["indname"];
+          ?>! </h1></div>
          
     
           <H3><span style="color:#FF3333;">You made $256 last pay period before taxes </span></H3>          
