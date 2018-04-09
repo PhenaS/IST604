@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php 
- 
+
 
 <title>SAW INC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
