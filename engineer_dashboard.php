@@ -21,10 +21,10 @@
   <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
   
  <div class="w3-container w3-padding-32 w3-black"  
- <h2> Hi there <?php 
+ <h4> Hi there <?php 
      session_start();
      echo $_SESSION["name"]; 
-    ?> ! </h2>
+    ?> ! </h4>
      <div style="color:whitesmoke;"><h3> Use the sidebar to navigate through this site <br> </h3></div>
   </div>
   
