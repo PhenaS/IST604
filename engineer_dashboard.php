@@ -21,7 +21,7 @@
   <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
   
  <div class="w3-container w3-padding-32 w3-black" >
-     <div style="color:whitesmoke;"><h1>Hi there <?php $_SESSION["name"] ?> ! <br> </h1></div>
+     <div style="color:whitesmoke;"><h1>Hi there <?php $_SESSION["name"]; ?> ! <br> </h1></div>
      <div style="color:whitesmoke;"><h3> Use the sidebar to navigate through this site <br> </h3></div>
   </div>
   
