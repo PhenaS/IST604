@@ -22,6 +22,7 @@ if(!empty($_POST["Username"]) && !empty($_POST["PIN"])) {
 if("$pin" == "$sow[1]") {
   session_start();
   $_SESSION["authenticated"] = 'true';
+  $_SESSION["indname"] = $sow[2];
   header('Location: individualdash.php');
 }else {
   header('Location:individuallogin.php');
