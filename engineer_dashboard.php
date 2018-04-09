@@ -2,7 +2,7 @@
 <html>
 <?php
     session_start();
-    if($_SESSION["authenticated"] !== 'true';){
+    if($_SESSION["authenticated"] !== 'true'){
      header('Location: login.php');   
     }
 
