@@ -5,6 +5,7 @@
     if($_SESSION["authenticated"] !== 'true'){
      header('Location: login.php');   
     }
+ ?>
 
 <title>SAW INC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
