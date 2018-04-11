@@ -20,8 +20,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h4>Solutions at Work Inc</h4>
     <p>SAW Staff Login</p>
       <form id="login" name="login" form action="checkauth.php" method="post">
-        <p><input class="w3-input w3-border" type="text" placeholder="EmployeeID" name="EmployeeID" required></p>
-        <p><input class="w3-input w3-border" type="password" placeholder="Password" name="Password" required></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="First Name" name="FirstName" required></p>
+        <p><input class="w3-input w3-border" type="password" placeholder="Last Name" name="LastName" required></p>
         <button type="submit" class="w3-button w3-block w3-black">Submit</button>
       </form> 
      
