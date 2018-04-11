@@ -1,7 +1,7 @@
 <?php
 include 'config.php';    
 if(empty($_POST["FirstName"]) or empty($_POST["LastName"]) or empty($_POST["bday"])){
-    header('add_employee.php');
+    header('Location: add_employee.php');
 }else{
 
 try{
