@@ -20,11 +20,26 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h4>Solutions at Work Inc</h4>
     <p>Add a Consumer</p>
       <form id="Add" name="Add" method="post">
-        <p><input class="w3-input w3-border" type="text" placeholder="First Name" name="First Name" required></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Last name" name="Last Name" required></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="First Name" name="FirstName" required></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Last name" name="LastName" required></p>
           <p>Birthdate<input class="w3-input w3-border" type="date" name="bday"></p>
         <button type="submit" class="w3-button w3-block w3-black">Add</button>
       </form> 
      
 </body>
+      
+<?php
+try{
+    include 'config.php';
+    
+    $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = ("INSERT INTO individual (first_name, last_name, birthdate) VALUES ('" . $_POST["FirstName"] . "','" . $_POST["LastName"] . "', '" . $_POST["bday"] . "')"); 
+    $stmt = $conn->query("$sql");
+    $row = $stmt->fetch();
+    $conn = NULL;
+    }catch(Exception $e){die(print_r($e));}    
+?>
 </html>
+    
+    
