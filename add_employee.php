@@ -1,14 +1,3 @@
-<?php
-    try{
-    include 'config.php';
-    
-    $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    }catch(Exception $e){die(print_r($e));}
-    
-    
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
