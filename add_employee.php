@@ -22,6 +22,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <form id="Add" name="Add" form action="add_employee.php" method="post">
         <p><input class="w3-input w3-border" type="text" placeholder="First Name" name="First Name" required></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Last name" name="Last Name" required></p>
+        <p>Birthdate<input class="w3-input w3-border" type="date" name="bday">
         <button type="submit" class="w3-button w3-block w3-black">Add</button>
       </form> 
      
