@@ -7,7 +7,7 @@ try{
     $sql = ("SELECT first_name, last_name FROM individual"); 
     $stmt = $conn->query("$sql");
     while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
-    echo $row['first_name'].", ".$row['last_name']."<br />";
+    echo $row['first_name'].", ".$row['last_name'].".";
     }catch(Exception $e){die(print_r($e));}    
 
 ?>
