@@ -15,6 +15,7 @@
 <div class="w3-sidebar w3-bar-block w3-grey w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
   onclick="w3_close()">Close &times;</button>
+  <a href="add_employee.php" class="w3-bar-item w3-button">Add Employee</a>
   <a href="#" class="w3-bar-item w3-button">View Expiring Rates</a>
   <a href="#" class="w3-bar-item w3-button">View Outdated Jobs</a>
   <a href="#" class="w3-bar-item w3-button">Enter Time Study Info</a>
