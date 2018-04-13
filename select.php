@@ -6,7 +6,6 @@ try{
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = ("SELECT first_name, last_name FROM individual"); 
     $stmt = $conn->query("$sql");
-    $conn = NULL;
     while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
     echo $row['first_name'].", ".$row['last_name']."<br />";
     }catch(Exception $e){die(print_r($e));}    
