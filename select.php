@@ -7,7 +7,7 @@ try{
     $result = $db->prepare("SELECT first_name, last_name FROM individual");
     $result->execute();
     
-    while ($row = $db->fetch(PDO::FETCH_ASSOC))
+    while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
     $title = $row['first_name'];
     $body = $row['last_name'];
