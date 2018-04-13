@@ -8,5 +8,5 @@ try{
     $tickets = $db->query('SELECT * FROM individual')->fetchAll();
     foreach($tickets as $ticket) {
     echo $ticket['first_name'];
-}
+}catch(Exception $e){die(print_r($e));}
 ?>
