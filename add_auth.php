@@ -11,6 +11,7 @@ try{
     $stmt = $conn->query("$sql");
     $conn = NULL;
     echo "Succesfully Added!";
+    header("refresh:2;url=engineer_dashboard.php");
     }catch(Exception $e){die(print_r($e));}    
 }
 ?>

@@ -54,9 +54,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
     <p class="w3-left">Solutions At Work Inc</p>
-    <p class="w3-right">
-      <i class="fa fa-search"></i>
-    </p>
+    <p class="w3-right"></p>
   </header>
 
   <!-- Image header -->
