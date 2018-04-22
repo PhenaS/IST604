@@ -16,13 +16,16 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   
 <body> 
   <div class="w3-row-padding">
-  <div class="w3-col s4">
     <h4>Solutions at Work Inc</h4>
     <p>SAW Individual Production Entry</p>
-      <form id="login" name="login" form action="add_prod.php" method="post">
+        <div class="w3-col s4">
+    <form id="login" name="login" form action="add_prod.php" method="post">
         <p><input style="width:50%" class="w3-input w3-border" type="text" placeholder="EmployeeID" name="EmployeeID" required></p>
         <p><input class="w3-input w3-border" type="password" placeholder="Password" name="Password" required></p>
+        </div>
+        <div class="w3-col s4">    
         <button type="submit" class="w3-button w3-block w3-black">Submit</button>
+        </div>
       </form> 
      
 </body>
