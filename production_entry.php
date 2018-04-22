@@ -20,9 +20,9 @@
       <input type="Select" class="form-control mb-2" id="inlineFormInput" placeholder="Individaul Name">
     </div>
     <div class="col-auto">
-      <label class="sr-only" for="inlineFormInputGroup">Start Time</label>
+      <label for="inlineFormInputGroup">Start Time</label>
       <div class="input-group mb-2">
-      <input type="Time" class="form-control" id="inlineFormInputGroup" placeholder="Operation Number">
+      <input type="Time" class="form-control" id="inlineFormInputGroup" >
       </div>
     </div>
     <div class="col-auto">
