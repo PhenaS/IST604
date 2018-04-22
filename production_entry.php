@@ -94,36 +94,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-    </head>
-    <body>
-        <form>
-            <h1 align = "center"> Register New Customer </h1>
-                <div = class="row">
-                <div class="column">
-                    <h2> *First Name: </h2>
-                    <input type = text name = "firstname" placeholder="First Name" required><br>
-                    <h2> *Last Name: </h2>
-                    <input type = text name = "lastname" placeholder="Last Name"><br>
-
-                </div>
-                
-                <div class="column">
-                    <h2> *Address: </h2>
-                    <input type = text name = "address" placeholder="Address"><br>
-                    <h2> *City: </h2>
-                    <input type = text name = "city" placeholder="City"><br>
-
-                </div>   
-                <div class="column">
-                    <h2> *Address: </h2>
-                    <input type = text name = "address" placeholder="Address"><br>
-                    <h2> *City: </h2>
-                    <input type = text name = "city" placeholder="City"><br>
-
-                </div>    
-                </div>
-                <input type="checkbox" name="terms" value="yes">I have read and agree to the terms and condidtions<br>
-                <input type ="submit" name ="Register"> 
-        </form>
-    </body>
-</html>
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="Start"/>
+    <span class="input-group-addon">-</span>
+    <input type="text" class="form-control" placeholder="End"/>
+</div>
