@@ -16,7 +16,7 @@
     <form>
     <div class="form-row align-items-center">
     <div class="col-auto">
-      <label class="sr-only" for="inlineFormInput">Name</label>
+      <label for="inlineFormInput">Individual Name</label>
       <input type="Select" class="form-control mb-2" id="inlineFormInput" placeholder="Individaul Name">
     </div>
     <div class="col-auto">
