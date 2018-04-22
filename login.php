@@ -15,7 +15,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <style>
 input[type=text], select {
-    width: 100%;
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -25,7 +25,7 @@ input[type=text], select {
 }
 
 input[type=submit] {
-    width: 100%;
+    width: 50%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
