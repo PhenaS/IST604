@@ -26,6 +26,12 @@
       </div>
     </div>
     <div class="col-auto">
+      <label for="inlineFormInputGroup">Stop Time</label>
+      <div class="input-group mb-2">
+      <input type="Time" class="form-control" id="inlineFormInputGroup" >
+      </div>
+    </div>
+    <div class="col-auto">
       <div class="form-check mb-2">
         <input class="form-check-input" type="checkbox" id="autoSizingCheck">
         <label class="form-check-label" for="autoSizingCheck">
