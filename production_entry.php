@@ -22,7 +22,7 @@
     <div class="col-auto">
       <label class="sr-only" for="inlineFormInputGroup">Start Time</label>
       <div class="input-group mb-2">
-      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Operation Number">
+      <input type="Time" class="form-control" id="inlineFormInputGroup" placeholder="Operation Number">
       </div>
     </div>
     <div class="col-auto">
