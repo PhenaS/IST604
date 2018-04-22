@@ -17,7 +17,7 @@
     *{
                 box-sizing: border-box;
             }
-            .column {
+            .column input{
                 float: left;
                 width: 50%;
                 padding: 10px;
