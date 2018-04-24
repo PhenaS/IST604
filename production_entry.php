@@ -13,20 +13,21 @@
   <body>
     <h1>SAW Proudction Sheet Entry</h1>
 
-<form class="form-inline">
+  <form class="form-inline">
   <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
   <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
     <option selected>Choose...</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
+    <option value="1">Phena Senediak</option>
+    <option value="2">Charlie Kelly</option>
+    <option value="3">Abby Stein</option>
   </select>
 
-  <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
-    <input type="checkbox" class="custom-control-input">
-    <span class="custom-control-indicator"></span>
-    <span class="custom-control-description">Remember my preference</span>
-  </label>
+  <label class="col-sm-2">Checkbox</label>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Check me out
+          </label
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
