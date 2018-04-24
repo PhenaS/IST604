@@ -16,7 +16,7 @@
     <form>
     <div class="form-row align-items-center">
     <div class="col-auto">
-    <select id="droplist" class="input-group mb-2">
+    <select id="droplist" class="form-control">
       <option>Option</option>
       <option>Option1</option>
       <option>Option2</option>
