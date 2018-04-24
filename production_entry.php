@@ -16,13 +16,15 @@
     <form>
     <div class="form-row align-items-center">
     <div class="col-auto">
-    <div class="col-auto">
-      <label for="inlineFormInputGroup">Stop Time</label>
+      <label for="inlineFormCustomSelect">Start Time</label>
       <div class="input-group mb-2">
-      <input type="Select" class="form-control" id="inlineFormInputGroup" >
-        <option>Charlie Kelly</option>
-        <option> Phena Senediak </option>
-      </div>
+      <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+
     </div>
     <div class="col-auto">
       <label for="inlineFormInputGroup">Start Time</label>
