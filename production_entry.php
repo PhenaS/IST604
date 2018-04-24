@@ -21,8 +21,8 @@
 </select>
 
   <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
+    <label for="time">Time In:</label>
+    <input type="time" class="form-control" id="Time In">
   </div>
   
   <div class="form-group">
