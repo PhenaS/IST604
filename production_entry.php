@@ -16,13 +16,13 @@
     <form>
     <div class="form-row align-items-center">
     <div class="col-auto">
-      <label for="inlineFormCustomSelect">Start Time</label>
+      <label for="inlineFormCustomSelect">Individual</label>
       <div class="input-group mb-2">
       <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
         <option selected>Choose...</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+        <option value="1">Charlie Kelly</option>
+        <option value="2">Phena Senediak</option>
+        <option value="3">Abby Stein</option>
       </select>
 
     </div>
