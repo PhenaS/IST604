@@ -8,29 +8,33 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-  <title>SAW Proudction Sheet Entry</title>
+    <title>SAW Proudction Sheet Entry</title>
   </head>
-  <body>
-    <h1>SAW Proudction Sheet Entry</h1>
+  
+<body>
+  <h1>SAW Proudction Sheet Entry</h1>
 
-<form class="form-inline">
-  <label class="sr-only" for="inlineFormInput">Name</label>
-  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Jane Doe">
-
-  <label class="sr-only" for="inlineFormInputGroup">Username</label>
-  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-    <div class="input-group-addon">@</div>
-    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-  </div>
-
-  <div class="form-check mb-2 mr-sm-2 mb-sm-0">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox"> Remember me
-    </label>
-  </div>
-
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<div class="well well-sm">
+  <form name="myForm" role="form" novalidate="novalidate" class="form-inline">
+    <div class="form-group">
+      <label>C-Band</label>
+      <select id="cband" class="form-control">
+        <option value="C15+">C15+</option>
+        <option value="C12-14">C12-14</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>C-Band</label>
+      <select ng-model="form.cband2" id="cband2" class="form-control">
+        <option value="C15+">C15+</option>
+        <option value="C12-14">C12-14</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <button class="btn btn-primary">Filter</button>
+  </form>
+</div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
