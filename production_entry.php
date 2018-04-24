@@ -25,7 +25,13 @@
   <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
-    <span class="custom-control-description">Remember my preference</span>
+    <span class="custom-control-description">Absent Full Day</span>
+  </label>
+
+  <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+    <input type="checkbox" class="custom-control-input">
+    <span class="custom-control-indicator"></span>
+    <span class="custom-control-description">Absent Part Day</span>
   </label>
 
   <button type="submit" class="btn btn-primary">Submit</button>
