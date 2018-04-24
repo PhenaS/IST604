@@ -16,11 +16,13 @@
     <form>
     <div class="form-row align-items-center">
     <div class="col-auto">
-    <select id="droplist" class="form-control">
-      <option>Option</option>
-      <option>Option1</option>
-      <option>Option2</option>
-    </select>
+    <div class="col-auto">
+      <label for="inlineFormInputGroup">Stop Time</label>
+      <div class="input-group mb-2">
+      <input type="Select" class="form-control" id="inlineFormInputGroup" >
+        <option>Charlie Kelly</option>
+        <option> Phena Senediak </option>
+      </div>
     </div>
     <div class="col-auto">
       <label for="inlineFormInputGroup">Start Time</label>
