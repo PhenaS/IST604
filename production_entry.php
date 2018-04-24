@@ -17,9 +17,9 @@
   <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
   <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
     <option selected>Choose...</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
+    <option value="1">Phena Senediak</option>
+    <option value="2">Charlie Kelly</option>
+    <option value="3">Abby Stein</option>
   </select>
 
   <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
