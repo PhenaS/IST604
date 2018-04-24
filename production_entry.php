@@ -13,45 +13,23 @@
   <body>
     <h1>SAW Proudction Sheet Entry</h1>
 
-    <form class="form-inline">
-    <div class="form-row align-items-center">
-    <div class="col-auto">
-      <label for="inlineFormCustomSelect">Individual</label>
-      <div class="input-group mb-2">
-      <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
-      <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-        <option selected>Choose...</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
+<form class="form-inline">
+  <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
 
-    </div>
-    <div class="col-auto">
-      <label for="inlineFormInputGroup">Start Time</label>
-      <div class="input-group mb-2">
-      <input type="Time" class="form-control" id="inlineFormInputGroup" >
-      </div>
-    </div>
-    <div class="col-auto">
-      <label for="inlineFormInputGroup">Stop Time</label>
-      <div class="input-group mb-2">
-      <input type="Time" class="form-control" id="inlineFormInputGroup" >
-      </div>
-    </div>
-    <div class="col-auto">
-      <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-        <label class="form-check-label" for="autoSizingCheck">
-          Remember me
-        </label>
-      </div>
-    </div>
-    <div class="col-auto">
-      <button type="submit" class="btn btn-primary mb-2">Submit</button>
-    </div>
-  </div>
-    </form>
+  <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+    <input type="checkbox" class="custom-control-input">
+    <span class="custom-control-indicator"></span>
+    <span class="custom-control-description">Remember my preference</span>
+  </label>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
