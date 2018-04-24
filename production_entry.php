@@ -38,14 +38,19 @@
   </div>
 
   <div class="form-group">
-    <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd">
-  </div>
+    <label for="example-number-input" class="col-2 col-form-label">Number</label>
+    <div class="col-10">
+    <input class="form-control" type="number" value="42" id="example-number-input">
+  </div></div>
     
   <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
+    <label><input type="checkbox"> Absent Full Day</label>
   </div>
-    
+
+  <div class="checkbox">
+    <label><input type="checkbox"> Absent Part Day</label>
+  </div>
+
   <button type="submit" class="btn btn-default">Submit</button>
 
 </form>
