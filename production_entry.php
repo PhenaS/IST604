@@ -23,11 +23,14 @@
   </select>
 
   <label class="col-sm-2">Checkbox</label>
-      <div class="col-sm-10">
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> Check me out
-          </label
+  <div class="col-sm-10">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Check me out
+      </label>
+    </div>
+  </div>
+
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
