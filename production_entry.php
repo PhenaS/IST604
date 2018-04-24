@@ -13,7 +13,7 @@
   <body>
     <h1>SAW Proudction Sheet Entry</h1>
 
-<form class="form-inline">
+  <form class="form-inline">
   <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
   <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
     <option selected>Choose...</option>
