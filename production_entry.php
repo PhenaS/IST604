@@ -14,26 +14,15 @@
 <body>
   <h1>SAW Proudction Sheet Entry</h1>
 
-<div class="well well-sm">
-  <form name="myForm" role="form" novalidate="novalidate" class="form-inline">
-    <div class="form-group">
-      <label>C-Band</label>
-      <select id="cband" class="form-control">
-        <option value="C15+">C15+</option>
-        <option value="C12-14">C12-14</option>
-        <option value="Other">Other</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label>C-Band</label>
-      <select ng-model="form.cband2" id="cband2" class="form-control">
-        <option value="C15+">C15+</option>
-        <option value="C12-14">C12-14</option>
-        <option value="Other">Other</option>
-      </select>
-    </div>
-    <button class="btn btn-primary">Filter</button>
-  </form>
+<template v-for="phone in phones">
+<div class="row">
+<div class="col-md-11">
+<label class="sr-only" for="phone.number">Phone Number:</label>
+<div class="input-group">
+<div class="input-group-addon">Phone Number:</div>
+<input class="form-control" v-model="phone.number" type="text" placeholder="123-123-1234"/>
+<div class="input-group-addon">Phone Type:</div>
+<v-select class="form-control" multiple :value.sync="phone.type" :options="ptypes"></v-select>
 </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
