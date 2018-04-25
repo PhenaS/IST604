@@ -32,6 +32,11 @@
       <input type="time" class="form-control" id="Time In" required>
   </div>
 
+<div class="form-group">
+  <label for="work_date">Work Date:</label>
+    <input type="date" class="form-control" id="work_date" required>
+</div>
+
   <div class="form-group">
     <label for="time">Time Out:</label>
       <input type="time" class="form-control" id="Time Out" required>
