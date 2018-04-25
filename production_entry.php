@@ -21,9 +21,9 @@
 <body>
   <h1>SAW Proudction Sheet Entry</h1>
 
-<form class="form-inline" action="prod_entry_auth.php">
+<form class="form-inline" method="post" action="prod_entry_auth.php">
   
-  <select class="form-control form-control-lg">
+  <select class="form-control form-control-lg" id="Individual">
     <option>Individual</option>
   </select>
 
@@ -42,7 +42,7 @@
       <input type="time" class="form-control" id="Time Out" required>
   </div>
 
-  <select class="form-control form-control-lg">
+  <select class="form-control form-control-lg" id="job">
     <option>Job Number</option>
     <option>1</option>
     <option>2</option>
@@ -52,8 +52,8 @@
     <option>6</option>
   </select>
 
-    <select class="form-control form-control-lg">
-    <option>Job Number</option>
+    <select class="form-control form-control-lg" id="op">
+    <option>Operation Number</option>
     <option>1</option>
     <option>2</option>
     <option>3</option>
