@@ -1,5 +1,5 @@
 <?php
 
-echo $_POST["Time In"]
-
+echo $_POST["TimeIn"];
+echo $_POST["TimeOut"];
 ?>
