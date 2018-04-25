@@ -34,12 +34,12 @@
   
   <div class="form-group">
     <label for="time">Time In:</label>
-      <input type="time" class="form-control" id="TimeIn" required>
+      <input type="time" class="form-control" name="TimeIn" required>
   </div>
 
   <div class="form-group">
     <label for="time">Time Out:</label>
-      <input type="time" class="form-control" id="TimeOut" required>
+      <input type="time" class="form-control" name="TimeOut" required>
   </div>
 
   <select class="form-control form-control-lg" id="job">
