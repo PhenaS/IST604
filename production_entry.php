@@ -21,7 +21,7 @@
 <body>
   <h1>SAW Proudction Sheet Entry</h1>
 
-<form class="form-inline" action="/action_page.php">
+<form class="form-inline" action="prod_entry_auth.php">
   
   <select class="form-control form-control-lg">
     <option>Individual</option>
