@@ -28,25 +28,40 @@
   </select>
 
   <div class="form-group">
+    <label for="work_date">Work Date:</label>
+      <input type="date" class="form-control" id="work_date" required>
+  </div>
+  
+  <div class="form-group">
     <label for="time">Time In:</label>
       <input type="time" class="form-control" id="Time In" required>
   </div>
-
-<div class="form-group">
-  <label for="work_date">Work Date:</label>
-    <input type="date" class="form-control" id="work_date" required>
-</div>
 
   <div class="form-group">
     <label for="time">Time Out:</label>
       <input type="time" class="form-control" id="Time Out" required>
   </div>
 
-  <div class="form-group">
-    <label for="example-number-input" class="col-2 col-form-label">Job Number</label>
-    <div class="col-10">
-    <input class="form-control" type="number" value="42" id="job_num" required>
-  </div></div>
+  <select class="form-control form-control-lg">
+    <option>Job Number</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+  </select>
+
+    <select class="form-control form-control-lg">
+    <option>Job Number</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+  </select>
     
   <div class="form-group">
     <label for="example-number-input" class="col-2 col-form-label">Number of Pieces</label>
