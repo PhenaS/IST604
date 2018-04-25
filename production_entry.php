@@ -38,11 +38,17 @@
   </div>
 
   <div class="form-group">
-    <label for="example-number-input" class="col-2 col-form-label">Number</label>
+    <label for="example-number-input" class="col-2 col-form-label">Job Number</label>
     <div class="col-10">
     <input class="form-control" type="number" value="42" id="example-number-input">
   </div></div>
     
+  <div class="form-group">
+    <label for="example-number-input" class="col-2 col-form-label">Number of Pieces</label>
+    <div class="col-10">
+    <input class="form-control" type="number" value="42" id="example-number-input">
+  </div></div>
+
   <div class="checkbox">
     <label><input type="checkbox"> Absent Full Day</label>
   </div>
