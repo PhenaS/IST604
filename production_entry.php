@@ -29,24 +29,24 @@
 
   <div class="form-group">
     <label for="time">Time In:</label>
-      <input type="time" class="form-control" id="Time In">
+      <input type="time" class="form-control" id="Time In" required>
   </div>
 
   <div class="form-group">
     <label for="time">Time Out:</label>
-      <input type="time" class="form-control" id="Time In">
+      <input type="time" class="form-control" id="Time Out" required>
   </div>
 
   <div class="form-group">
     <label for="example-number-input" class="col-2 col-form-label">Job Number</label>
     <div class="col-10">
-    <input class="form-control" type="number" value="42" id="example-number-input">
+    <input class="form-control" type="number" value="42" id="job_num" required>
   </div></div>
     
   <div class="form-group">
     <label for="example-number-input" class="col-2 col-form-label">Number of Pieces</label>
     <div class="col-10">
-    <input class="form-control" type="number" value="42" id="example-number-input">
+    <input class="form-control" type="number" value="42" id="piece_qty" required>
   </div></div>
 
   <div class="checkbox">
@@ -62,3 +62,4 @@
 </form>
 
 </html>
+
