@@ -22,7 +22,7 @@ try{
      $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
      $sql = ("INSERT INTO piece_production_sheet (entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced ) 
-     VALUES ('" . $workdate . "'," . $empid . ", " . $op . " , " . $workingHours . ", " . $job . ", " . $qty . ")"); 
+     VALUES ('" . $workdate . "'," . $empid . ", " . $op . " , " . $indid . ", " . $workingHours . ", " . $job . ", " . $qty . ")"); 
      $stmt = $conn->query("$sql");
      $conn = NULL;
      echo "Succesfully Added!";
