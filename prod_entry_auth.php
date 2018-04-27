@@ -1,4 +1,9 @@
 <?php
+session_start();
+    if($_SESSION["authenticated"] !== 'true'){
+     header('Location: login.php');   
+    }
+
 $timein = $_POST["TimeIn"];
 $timeout = $_POST["TimeOut"];
 $indid = $_POST["Individual"];
