@@ -46,14 +46,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><?php echo $row['line_id'] ?></td>
-        <td><?php echo $row['entry_date'] ?></td>
-        <td><?php echo $row['hours_worked'] ?></td>
-        <td><?php echo $row['emp_id'] ?></td>
-        <td><?php echo $row['individual_id'] ?></td>
-        <td><?php echo $row['job_id'] ?></td>
-        <td><?php echo $row['op_id'] ?></td>
-        <td><?php echo $row['pieces_produced'] ?></td>
+        <td> <?php echo $row['line_id'] ?> </td>
+        <td> <?php echo $row['entry_date'] ?> </td>
+        <td> <?php echo $row['hours_worked'] ?> </td>
+        <td> <?php echo $row['emp_id'] ?> </td>
+        <td> <?php echo $row['individual_id'] ?> </td>
+        <td> <?php echo $row['job_id'] ?> </td>
+        <td> <?php echo $row['op_id'] ?> </td>
+        <td> <?php echo $row['pieces_produced'] ?> </td>
       </tr>
     </tbody>
   </table>
