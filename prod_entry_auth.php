@@ -2,7 +2,7 @@
 $timein = $_POST["TimeIn"];
 $timeout = $_POST["TimeOut"];
 
-$hours = $timeout - $timein;
+$workingHours = (strtotime($timeout) - strtotime($timein)) / 3600;
 
-echo $hours;
+echo $workingHours;
 ?>
