@@ -63,7 +63,7 @@ if($_SESSION["authenticated"] !== 'true'){
   <div class="checkbox">
     <label><input type="checkbox"> Absent Part Day</label>
   </div>
-  <br>
+</br>
   
   <select class="form-group" name="job">
     <option>Job Number</option>
@@ -91,8 +91,6 @@ if($_SESSION["authenticated"] !== 'true'){
     <div class="col-10">
     <input class="form-control" type="number" value="42" name="piece_qty" required>
   </div></div>
-
-
 
   <button type="submit" class="btn btn-default">Submit</button>
 
