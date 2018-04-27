@@ -56,6 +56,15 @@ if($_SESSION["authenticated"] !== 'true'){
       <input type="time" class="form-control" name="TimeOut" required>
   </div>
 
+  <div class="checkbox">
+    <label><input type="checkbox"> Absent Full Day</label>
+  </div>
+
+  <div class="checkbox">
+    <label><input type="checkbox"> Absent Part Day</label>
+  </div>
+  <br>
+  
   <select class="form-group" name="job">
     <option>Job Number</option>
     <option>1</option>
@@ -83,13 +92,7 @@ if($_SESSION["authenticated"] !== 'true'){
     <input class="form-control" type="number" value="42" name="piece_qty" required>
   </div></div>
 
-  <div class="checkbox">
-    <label><input type="checkbox"> Absent Full Day</label>
-  </div>
 
-  <div class="checkbox">
-    <label><input type="checkbox"> Absent Part Day</label>
-  </div>
 
   <button type="submit" class="btn btn-default">Submit</button>
 
