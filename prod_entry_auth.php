@@ -1,5 +1,8 @@
 <?php
+$timein = $_POST["TimeIn"];
+$timeout = $_POST["TimeOut"];
 
-echo $_POST["TimeIn"];
-echo $_POST["TimeOut"];
+$hours = $timeout - $timein;
+
+echo $hours;
 ?>
