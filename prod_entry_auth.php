@@ -14,8 +14,18 @@ $workdate = $_POST["work_date"];
 
 $workingHours = (strtotime($timeout) - strtotime($timein)) / 3600;
 
-echo $_POST["job"];
-echo $_SESSION["Empid"];
+$empid = $_SESSION["Empid"];
 
-
+include 'config.php';    
+ 
+try{
+     $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
+     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+     $sql = ("INSERT INTO piece_production_sheet (entry_date, staff_id, individual_id, op_id, hours_worked, job_id, pieces_produced ) VALUES ('" . $workdate . "','" . $empid . "', '" . $op . "' , '" . $job . "', '" . $workingHours . "', '" . $job . "', '" . $qty . "')"); 
+     $stmt = $conn->query("$sql");
+     $conn = NULL;
+     echo "Succesfully Added!";
+     header("refresh:2;url=engineer_dashboard.php");
+     }catch(Exception $e){die(print_r($e));}    
+ 
 ?>
