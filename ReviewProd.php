@@ -14,9 +14,9 @@
         $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet"); 
-        $stmt = $conn->query("$sql");
+        $stmt = $conn->query("$sql");individual_id
         $row = $stmt->fetch();
-        $conn = NULL;
+        $conn = NULL;job_id
         }catch(Exception $e){die(print_r($e));}
  ?>
 
@@ -35,21 +35,23 @@
     <thead>
       <tr>
         <th>#</th>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Age</th>
-        <th>City</th>
-        <th>Country</th>
+        <th>Date</th>
+        <th>Hours</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><?php echo $row['line_id'] ?></td>
         <td><?php echo $row['entry_date'] ?></td>
+        <td><?php echo $row['hours_worked'] ?></td>
         <td><?php echo $row['emp_id'] ?></td>
-        <td><?php echo $row['line_id'] ?></td>
-        <td><?php echo $row['line_id'] ?></td>
-        <td><?php echo $row['line_id'] ?></td>
+        <td><?php echo $row['individual_id'] ?></td>
+        <td><?php echo $row['job_id'] ?></td>
+        <td><?php echo $row['op_id'] ?></td>
+        <td><?php echo $row['pieces_produced'] ?></td>
       </tr>
     </tbody>
   </table>
