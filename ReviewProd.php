@@ -1,198 +1,388 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Table V02</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
 
-$base-spacing-unit: 24px;
-$half-spacing-unit: $base-spacing-unit / 2;
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+					<div class="table">
 
-$color-alpha: #1772FF;
-$color-form-highlight: #EEEEEE;
+						<div class="row header">
+							<div class="cell">
+								Full Name
+							</div>
+							<div class="cell">
+								Age
+							</div>
+							<div class="cell">
+								Job Title
+							</div>
+							<div class="cell">
+								Location
+							</div>
+						</div>
 
-*, *:before, *:after {
-	box-sizing:border-box;
-}
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Vincent Williamson
+							</div>
+							<div class="cell" data-title="Age">
+								31
+							</div>
+							<div class="cell" data-title="Job Title">
+								iOS Developer
+							</div>
+							<div class="cell" data-title="Location">
+								Washington
+							</div>
+						</div>
 
-body {
-	padding:$base-spacing-unit;
-	font-family:'Source Sans Pro', sans-serif;
-	margin:0;
-}
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Joseph Smith
+							</div>
+							<div class="cell" data-title="Age">
+								27
+							</div>
+							<div class="cell" data-title="Job Title">
+								Project Manager
+							</div>
+							<div class="cell" data-title="Location">
+								Somerville, MA
+							</div>
+						</div>
 
-h1,h2,h3,h4,h5,h6 {
-	margin:0;
-}
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Justin Black
+							</div>
+							<div class="cell" data-title="Age">
+								26
+							</div>
+							<div class="cell" data-title="Job Title">
+								Front-End Developer
+							</div>
+							<div class="cell" data-title="Location">
+								Los Angeles
+							</div>
+						</div>
 
-.container {
-	max-width: 1000px;
-	margin-right:auto;
-	margin-left:auto;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	min-height:100vh;
-}
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Sean Guzman
+							</div>
+							<div class="cell" data-title="Age">
+								25
+							</div>
+							<div class="cell" data-title="Job Title">
+								Web Designer
+							</div>
+							<div class="cell" data-title="Location">
+								San Francisco
+							</div>
+						</div>
 
-.table {
-	width:100%;
-	border:1px solid $color-form-highlight;
-}
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Keith Carter
+							</div>
+							<div class="cell" data-title="Age">
+								20
+							</div>
+							<div class="cell" data-title="Job Title">
+								Graphic Designer
+							</div>
+							<div class="cell" data-title="Location">
+								New York, NY
+							</div>
+						</div>
 
-.table-header {
-	display:flex;
-	width:100%;
-	background:#000;
-	padding:($half-spacing-unit * 1.5) 0;
-}
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Austin Medina
+							</div>
+							<div class="cell" data-title="Age">
+								32
+							</div>
+							<div class="cell" data-title="Job Title">
+								Photographer
+							</div>
+							<div class="cell" data-title="Location">
+								New York
+							</div>
+						</div>
 
-.table-row {
-	display:flex;
-	width:100%;
-	padding:($half-spacing-unit * 1.5) 0;
-	
-	&:nth-of-type(odd) {
-		background:$color-form-highlight;
-	}
-}
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Vincent Williamson
+							</div>
+							<div class="cell" data-title="Age">
+								31
+							</div>
+							<div class="cell" data-title="Job Title">
+								iOS Developer
+							</div>
+							<div class="cell" data-title="Location">
+								Washington
+							</div>
+						</div>
 
-.table-data, .header__item {
-	flex: 1 1 20%;
-	text-align:center;
-}
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Joseph Smith
+							</div>
+							<div class="cell" data-title="Age">
+								27
+							</div>
+							<div class="cell" data-title="Job Title">
+								Project Manager
+							</div>
+							<div class="cell" data-title="Location">
+								Somerville, MA
+							</div>
+						</div>
 
-.header__item {
-	text-transform:uppercase;
-}
-
-.filter__link {
-	color:white;
-	text-decoration: none;
-	position:relative;
-	display:inline-block;
-	padding-left:$base-spacing-unit;
-	padding-right:$base-spacing-unit;
-	
-	&::after {
-		content:'';
-		position:absolute;
-		right:-($half-spacing-unit * 1.5);
-		color:white;
-		font-size:$half-spacing-unit;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-	
-	&.desc::after {
-		content: '(desc)';
-	}
-
-	&.asc::after {
-		content: '(asc)';
-	}
-	
-}
-
-<p>Sort Table Rows by Clicking on the Table Headers - Ascending and Descending (jQuery)</p>
-<div class="container">
-	
-	<div class="table">
-		<div class="table-header">
-			<div class="header__item"><a id="name" class="filter__link" href="#">Name</a></div>
-			<div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Wins</a></div>
-			<div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Draws</a></div>
-			<div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">Losses</a></div>
-			<div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">Total</a></div>
+					</div>
+			</div>
 		</div>
-		<div class="table-content">	
-			<div class="table-row">		
-				<div class="table-data">Tom</div>
-				<div class="table-data">2</div>
-				<div class="table-data">0</div>
-				<div class="table-data">1</div>
-				<div class="table-data">5</div>
-			</div>
-			<div class="table-row">
-				<div class="table-data">Dick</div>
-				<div class="table-data">1</div>
-				<div class="table-data">1</div>
-				<div class="table-data">2</div>
-				<div class="table-data">3</div>
-			</div>
-			<div class="table-row">
-				<div class="table-data">Harry</div>
-				<div class="table-data">0</div>
-				<div class="table-data">2</div>
-				<div class="table-data">2</div>
-				<div class="table-data">2</div>
-			</div>
-		</div>	
 	</div>
-</div>
 
-<script>
-var properties = [
-	'name',
-	'wins',
-	'draws',
-	'losses',
-	'total',
-];
 
-$.each( properties, function( i, val ) {
-	
-	var orderClass = '';
 
-	$("#" + val).click(function(e){
-		e.preventDefault();
-		$('.filter__link.filter__link--active').not(this).removeClass('filter__link--active');
-  		$(this).toggleClass('filter__link--active');
-   		$('.filter__link').removeClass('asc desc');
 
-   		if(orderClass == 'desc' || orderClass == '') {
-    			$(this).addClass('asc');
-    			orderClass = 'asc';
-       	} else {
-       		$(this).addClass('desc');
-       		orderClass = 'desc';
-       	}
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--====================================================<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Table V02</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
 
-		var parent = $(this).closest('.header__item');
-    		var index = $(".header__item").index(parent);
-		var $table = $('.table-content');
-		var rows = $table.find('.table-row').get();
-		var isSelected = $(this).hasClass('filter__link--active');
-		var isNumber = $(this).hasClass('filter__link--number');
-			
-		rows.sort(function(a, b){
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+					<div class="table">
 
-			var x = $(a).find('.table-data').eq(index).text();
-    			var y = $(b).find('.table-data').eq(index).text();
-				
-			if(isNumber == true) {
-    					
-				if(isSelected) {
-					return x - y;
-				} else {
-					return y - x;
-				}
+						<div class="row header">
+							<div class="cell">
+								Full Name
+							</div>
+							<div class="cell">
+								Age
+							</div>
+							<div class="cell">
+								Job Title
+							</div>
+							<div class="cell">
+								Location
+							</div>
+						</div>
 
-			} else {
-			
-				if(isSelected) {		
-					if(x < y) return -1;
-					if(x > y) return 1;
-					return 0;
-				} else {
-					if(x > y) return -1;
-					if(x < y) return 1;
-					return 0;
-				}
-			}
-    		});
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Vincent Williamson
+							</div>
+							<div class="cell" data-title="Age">
+								31
+							</div>
+							<div class="cell" data-title="Job Title">
+								iOS Developer
+							</div>
+							<div class="cell" data-title="Location">
+								Washington
+							</div>
+						</div>
 
-		$.each(rows, function(index,row) {
-			$table.append(row);
-		});
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Joseph Smith
+							</div>
+							<div class="cell" data-title="Age">
+								27
+							</div>
+							<div class="cell" data-title="Job Title">
+								Project Manager
+							</div>
+							<div class="cell" data-title="Location">
+								Somerville, MA
+							</div>
+						</div>
 
-		return false;
-	});
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Justin Black
+							</div>
+							<div class="cell" data-title="Age">
+								26
+							</div>
+							<div class="cell" data-title="Job Title">
+								Front-End Developer
+							</div>
+							<div class="cell" data-title="Location">
+								Los Angeles
+							</div>
+						</div>
 
-});
-</script>
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Sean Guzman
+							</div>
+							<div class="cell" data-title="Age">
+								25
+							</div>
+							<div class="cell" data-title="Job Title">
+								Web Designer
+							</div>
+							<div class="cell" data-title="Location">
+								San Francisco
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Keith Carter
+							</div>
+							<div class="cell" data-title="Age">
+								20
+							</div>
+							<div class="cell" data-title="Job Title">
+								Graphic Designer
+							</div>
+							<div class="cell" data-title="Location">
+								New York, NY
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Austin Medina
+							</div>
+							<div class="cell" data-title="Age">
+								32
+							</div>
+							<div class="cell" data-title="Job Title">
+								Photographer
+							</div>
+							<div class="cell" data-title="Location">
+								New York
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Vincent Williamson
+							</div>
+							<div class="cell" data-title="Age">
+								31
+							</div>
+							<div class="cell" data-title="Job Title">
+								iOS Developer
+							</div>
+							<div class="cell" data-title="Location">
+								Washington
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Joseph Smith
+							</div>
+							<div class="cell" data-title="Age">
+								27
+							</div>
+							<div class="cell" data-title="Job Title">
+								Project Manager
+							</div>
+							<div class="cell" data-title="Location">
+								Somerville, MA
+							</div>
+						</div>
+
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+</body>
+</html>
+===========================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+</body>
+</html>
