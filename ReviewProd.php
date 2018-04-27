@@ -6,7 +6,7 @@
     session_start();
     if($_SESSION["authenticated"] !== 'true'){
      header('Location: login.php');   
-    }
+    }job_id
 
     try{
         include 'config.php';
@@ -20,10 +20,10 @@
         }catch(Exception $e){die(print_r($e));}
  ?>
 
-  <meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -46,14 +46,14 @@
     </thead>
     <tbody>
       <tr>
-        <td> <?php echo $row['line_id'] ?> </td>
-        <td> <?php echo $row['entry_date'] ?> </td>
-        <td> <?php echo $row['hours_worked'] ?> </td>
-        <td> <?php echo $row['emp_id'] ?> </td>
-        <td> <?php echo $row['individual_id'] ?> </td>
-        <td> <?php echo $row['job_id'] ?> </td>
-        <td> <?php echo $row['op_id'] ?> </td>
-        <td> <?php echo $row['pieces_produced'] ?> </td>
+        <td> <?php echo $row['line_id']; ?> </td>
+        <td> <?php echo $row['entry_date']; ?> </td>
+        <td> <?php echo $row['hours_worked']; ?> </td>
+        <td> <?php echo $row['emp_id']; ?> </td>
+        <td> <?php echo $row['individual_id']; ?> </td>
+        <td> <?php echo $row['job_id']; ?> </td>
+        <td> <?php echo $row['op_id']; ?> </td>
+        <td> <?php echo $row['pieces_produced']; ?> </td>
       </tr>
     </tbody>
   </table>
