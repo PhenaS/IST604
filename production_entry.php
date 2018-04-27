@@ -32,7 +32,13 @@ if($_SESSION["authenticated"] !== 'true'){
 <form class="form-inline" method="post" action="prod_entry_auth.php">
   
   <select class="form-group" name="Individual">
-    <option>Individual</option>
+    <option>100</option>
+    <option>105</option>
+    <option>110</option>
+    <option>115</option>
+    <option>120</option>
+    <option>125</option>
+    <option>130</option>
   </select>
 
   <div class="form-group">
