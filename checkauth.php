@@ -23,7 +23,7 @@ if($password == $row[0]) {
   session_start();
   $_SESSION["authenticated"] = 'true';
   $_SESSION["name"] = $row[2];
-  header('Location: engineer_dashboard.php');
+  $_SESSION["employee_id"] = $_POST["EmployeeID"];
 }else {
   session_start();
   $_SESSION["authenticated"] = 'false';
