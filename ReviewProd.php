@@ -45,11 +45,11 @@
     <tbody>
       <tr>
         <td><?php echo $row['line_id'] ?></td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
-        <td>USA</td>
+        <td><?php echo $row['entry_date'] ?></td>
+        <td><?php echo $row['emp_id'] ?></td>
+        <td><?php echo $row['line_id'] ?></td>
+        <td><?php echo $row['line_id'] ?></td>
+        <td><?php echo $row['line_id'] ?></td>
       </tr>
     </tbody>
   </table>
