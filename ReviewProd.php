@@ -44,7 +44,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><?php echo $row ?></td>
+        <td><?php echo $row['line_id'] ?></td>
         <td>Anna</td>
         <td>Pitt</td>
         <td>35</td>
