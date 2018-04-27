@@ -14,5 +14,8 @@ $workdate = $_POST["work_date"];
 
 $workingHours = (strtotime($timeout) - strtotime($timein)) / 3600;
 
+echo $_POST["job"];
+echo $_SESSION["Empid"];
+
 
 ?>
