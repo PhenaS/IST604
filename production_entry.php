@@ -96,5 +96,8 @@ if($_SESSION["authenticated"] !== 'true'){
 
 </form>
 
+<form class="form-inline" method="post" action="ReviewProd.php">
+  <button type="submit" class="btn btn-default">I'm Done</button>
+</form>
 </html>
 
