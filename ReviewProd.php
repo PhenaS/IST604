@@ -17,7 +17,7 @@
         $stmt = $conn->query("$sql");individual_id
         $row = $stmt->fetch();
         $conn = NULL;job_id
-        }catch(Exception $e){die(print_r($e));}
+        }catch(Exception $e){die(print_r($e));}job_id
  ?>
 
   <meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">
@@ -37,9 +37,11 @@
         <th>#</th>
         <th>Date</th>
         <th>Hours</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>das</th>
+        <th>asdf</th>
+        <th>asdf</th>
+        <th>asdf</th>
+        <th>asdf</th>
       </tr>
     </thead>
     <tbody>
