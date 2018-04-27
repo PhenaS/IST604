@@ -1,10 +1,12 @@
 <!doctype html>
 
+<?php
 session_start();
 if($_SESSION["authenticated"] !== 'true'){
    header('Location: login.php');   
    }
-   
+?>
+
 <html lang="en">
 
 <head>
