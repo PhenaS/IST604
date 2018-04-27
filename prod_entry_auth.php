@@ -25,7 +25,8 @@ try{
      $stmt = $conn->query("$sql");
      $conn = NULL;
      echo "Succesfully Added!";
-     header("refresh:2;url=engineer_dashboard.php");
+     header("refresh:1;url=production_entry.php");
      }catch(Exception $e){die(print_r($e));}    
  
 ?>
+ 
