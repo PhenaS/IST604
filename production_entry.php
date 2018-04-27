@@ -23,13 +23,13 @@
 
 <form class="form-inline" method="post" action="prod_entry_auth.php">
   
-  <select class="form-control form-control-lg" id="Individual">
+  <select class="form-group" name="Individual">
     <option>Individual</option>
   </select>
 
   <div class="form-group">
     <label for="work_date">Work Date:</label>
-      <input type="date" class="form-control" id="work_date" required>
+      <input type="date" class="form-control" name="work_date" required>
   </div>
   
   <div class="form-group">
@@ -42,7 +42,7 @@
       <input type="time" class="form-control" name="TimeOut" required>
   </div>
 
-  <select class="form-control form-control-lg" id="job">
+  <select class="form-group" name="job">
     <option>Job Number</option>
     <option>1</option>
     <option>2</option>
@@ -52,7 +52,7 @@
     <option>6</option>
   </select>
 
-    <select class="form-control form-control-lg" id="op">
+    <select class="form-group" name="op">
     <option>Operation Number</option>
     <option>1</option>
     <option>2</option>
@@ -66,7 +66,7 @@
   <div class="form-group">
     <label for="example-number-input" class="col-2 col-form-label">Number of Pieces</label>
     <div class="col-10">
-    <input class="form-control" type="number" value="42" id="piece_qty" required>
+    <input class="form-control" type="number" value="42" name="piece_qty" required>
   </div></div>
 
   <div class="checkbox">
