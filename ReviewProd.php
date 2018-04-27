@@ -16,8 +16,8 @@
         $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet"); 
         $stmt = $conn->query("$sql");individual_id
         $row = $stmt->fetch();
-        $conn = NULL;job_id
-        }catch(Exception $e){die(print_r($e));}job_id
+        $conn = NULL;
+        }catch(Exception $e){die(print_r($e));}
  ?>
 
   <meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">
