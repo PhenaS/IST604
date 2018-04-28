@@ -26,9 +26,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+ece_production_sheet"); 
 <div class="container">
-  <h2>Table</h2>
+  <h2>Table</h2>ce_production_sheet"); 
   <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>                                                                                      
   <div class="table-responsive">          
   <table class="table">
@@ -37,9 +37,9 @@
         <th>#</th>
         <th>Date</th>
         <th>Hours</th>
-        <th>das</th>
-        <th>asdf</th>
-        <th>asdf</th>
+        <th>job</th>
+        <th>operation</th>
+        <th>staff_id</th>
         <th>asdf</th>
         <th>asdf</th>
       </tr>
@@ -47,12 +47,12 @@
     <tbody>
       <tr>
         <td> <?php echo $row['line_id']; ?> </td>
-        <td> <?php echo $row['line_id']; ?> </td>
-        <td> <?php echo $row['line_id']; ?> </td>
-        <td> <?php echo $row['line_id']; ?> </td>
-        <td> <?php echo $row['line_id']; ?> </td>
-        <td> <?php echo $row['line_id']; ?> </td>
-        <td> <?php echo $row['line_id']; ?> </td>
+        <td> <?php echo $row['entry_date']; ?> </td>
+        <td> <?php echo $row['individual_id']; ?> </td>
+        <td> <?php echo $row['hours_worked']; ?> </td>
+        <td> <?php echo $row['job_id']; ?> </td>
+        <td> <?php echo $row['op_id']; ?> </td>
+        <td> <?php echo $row['pieces_produced']; ?> </td>
         <td> <?php echo $row['line_id']; ?> </td>
       </tr>
     </tbody>
