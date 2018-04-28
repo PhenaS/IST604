@@ -16,7 +16,6 @@
         $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet WHERE  entry_date >= getdate()"); 
         $stmt = $conn->query("$sql");
         $row = $stmt->fetch();
-        $conn = NULL;
         }catch(Exception $e){die(print_r($e));}
  ?>
 
@@ -37,7 +36,7 @@
         <th>#</th>
         <th>Date</th>
         <th>individual_id</th>
-        <th>Hours</th>'getdate()'
+        <th>Hours</th>
         <th>job</th>
         <th>operation</th>
         <th>pieces</th>
