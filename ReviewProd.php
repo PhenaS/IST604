@@ -15,7 +15,6 @@
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet WHERE  entry_date >= getdate()"); 
         $stmt = $conn->query("$sql");
-        $row = $stmt->fetch();
         }catch(Exception $e){die(print_r($e));}
  ?>
 
@@ -44,6 +43,10 @@
       </tr>
     </thead>
     <tbody>
+    <?php
+    while ($row = $stmt->fetch())
+    {  
+      ?>
       <tr>
         <td> <?php echo $row['line_id']; ?> </td>
         <td> <?php echo $row['entry_date']; ?> </td>
@@ -53,6 +56,7 @@
         <td> <?php echo $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; ?> </td>
       </tr>
+    <?php } ?>
     </tbody>
   </table>
   </div>
