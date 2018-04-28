@@ -26,9 +26,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-ece_production_sheet"); 
+ 
 <div class="container">
-  <h2>Table</h2>ce_production_sheet"); 
+  <h2>Table</h2> 
   <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>                                                                                      
   <div class="table-responsive">          
   <table class="table">
