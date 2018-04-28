@@ -36,12 +36,12 @@ ece_production_sheet");
       <tr>
         <th>#</th>
         <th>Date</th>
+        <th>individual_id</th>
         <th>Hours</th>
         <th>job</th>
         <th>operation</th>
-        <th>staff_id</th>
-        <th>asdf</th>
-        <th>asdf</th>
+        <th>pieces</th>
+        
       </tr>
     </thead>
     <tbody>
@@ -53,7 +53,6 @@ ece_production_sheet");
         <td> <?php echo $row['job_id']; ?> </td>
         <td> <?php echo $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; ?> </td>
-        <td> <?php echo $row['line_id']; ?> </td>
       </tr>
     </tbody>
   </table>
