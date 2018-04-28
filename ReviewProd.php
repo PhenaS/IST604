@@ -7,13 +7,14 @@
     if($_SESSION["authenticated"] !== 'true'){
      header('Location: login.php');   
     }
+    $empid = $_SESSION['Empid'];
 
     try{
         include 'config.php';
         
         $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet WHERE  entry_date >= getdate() AND emp_id = . " $_SESSION["Empid"] " . "); 
+        $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet WHERE  entry_date >= getdate() AND emp_id = " . $empid . ""); 
         $stmt = $conn->query("$sql");
         }catch(Exception $e){die(print_r($e));}
  ?>
@@ -29,6 +30,12 @@
   <h2>Table</h2> 
   <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>                                                                                      
   <div class="table-responsive">          
+signup.php	Add files via upload	6 hours ago
+sql.php	Add files via upload	a month ago
+sqltest.php	Add files via upload	a month ago
+test.php	Create test.php	18 days ago
+trans.php	Add files via upload	2 hours ago
+
   <table class="table">
     <thead>
       <tr>
