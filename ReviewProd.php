@@ -13,7 +13,7 @@
         
         $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet WHERE  = cast(time_stame as date) = getdate()"); 
+        $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet WHERE  = cast(time_stamp as date) = getdate()"); 
         $stmt = $conn->query("$sql");
         $row = $stmt->fetch();
         $conn = NULL;
