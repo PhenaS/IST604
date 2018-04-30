@@ -20,12 +20,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h4>Solutions at Work Inc</h4>
     <p>Please be sure you are an employee of Solutions At Work Inc.  </p>
       <form id="login" name="login" form action="checkauth.php" method="post" style="width:80%">
-        <p><input class="w3-input w3-border" type="text" placeholder="<?php session_start(); echo $_SESSION['line']; ?>" name="LName" required></p>
-        <p><input class="w3-input w3-border" type="password" placeholder="Last 4 SSN" name="SSN" pattern=".{4,4}" required title="4 characters"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Username" name="signupusername" required></p>
-        <p><input class="w3-input w3-border" type="password" placeholder="Password" name="NewPassword" required></p>
-        <p><input class="w3-input w3-border" type="confirm password" placeholder="Confirm Password" name="ConfPassword" required></p>
-
+        <p><input class="w3-input w3-border" type="Text" placeholder="<?php session_start(); echo $_SESSION['line']; ?>" name="line" required disabled></p>
+        <p><input class="w3-input w3-border" type="Text" placeholder="Individual ID" name="IndID" pattern=".{3,5}" required title="Invalid"></p>
+        <p><input class="w3-input w3-border" type="number" placeholder="Hours" name="Hours" required></p>
+        <p><input class="w3-input w3-border" type="number" placeholder="job" name="jobnum" required></p>
+        <p><input class="w3-input w3-border" type="number" placeholder="op" name="opnum" required></p>
+        <p><input class="w3-input w3-border" type="number" placeholder="qty" name="qty" required></p>
         <button type="submit" class="w3-button w3-block w3-black">Sign Up</button>
       </form> 
      
