@@ -57,7 +57,7 @@
         <td> <?php echo $row['job_id']; ?> </td>
         <td> <?php echo $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; ?> </td>
-        <td><a href="">Edit</a> <?php $_SESSION['line'] = $row['line_id'] ?></td>
+        <td><a href="edit.php">Edit</a> <?php $_SESSION['line'] = $row['line_id'] ?></td>
         <td><a href="">Delete</a></td>
       </tr>
     <?php 
