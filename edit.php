@@ -20,7 +20,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h4>Solutions at Work Inc</h4>
     <p>Please be sure you are an employee of Solutions At Work Inc.  </p>
       <form id="login" name="login" form action="checkauth.php" method="post" style="width:80%">
-        <p><input class="w3-input w3-border" type="text" placeholder="<?php echo $_SESSION['line'] ?>" name="LName" required></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="<?php session_start(); echo $_SESSION['line']; ?>" name="LName" required></p>
         <p><input class="w3-input w3-border" type="password" placeholder="Last 4 SSN" name="SSN" pattern=".{4,4}" required title="4 characters"></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Username" name="signupusername" required></p>
         <p><input class="w3-input w3-border" type="password" placeholder="Password" name="NewPassword" required></p>
