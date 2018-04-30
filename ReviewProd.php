@@ -20,7 +20,7 @@
  ?>
 
 <meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >42
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -58,7 +58,17 @@
         <td> <?php echo $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; ?> </td>
       </tr>
-    <?php } ?>
+      <tr>
+        <td> <?php echo $row['line_id']; ?> </td>
+        <td> <?php echo $row['entry_date']; ?> </td>
+        <td> <?php echo $row['individual_id']; ?> </td>
+        <td> <?php echo $row['hours_worked']; ?> </td>
+        <td> <?php echo $row['job_id']; ?> </td>
+        <td> <?php echo $row['op_id']; ?> </td>
+        <td> <?php echo $row['pieces_produced']; ?> </td>
+      </tr>
+    <?php 
+  } ?>
     </tbody>
   </table>
   </div>
