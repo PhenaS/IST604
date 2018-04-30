@@ -27,10 +27,7 @@
 <body>
  
 <div class="container">
-  <h2><?php
-$today = getdate();
-print_r($today);
-?></h2> 
+  <h2>Todays Entry</h2> 
   <p>Please Review the Records You Entered Today:</p>                                                                                      
   <div class="table-responsive">          
 
