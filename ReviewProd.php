@@ -57,15 +57,8 @@
         <td> <?php echo $row['job_id']; ?> </td>
         <td> <?php echo $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; ?> </td>
-      </tr>
-      <tr>
-        <td> <?php echo $row['line_id']; ?> </td>
-        <td> <?php echo $row['entry_date']; ?> </td>
-        <td> <?php echo $row['individual_id']; ?> </td>
-        <td> <?php echo $row['hours_worked']; ?> </td>
-        <td> <?php echo $row['job_id']; ?> </td>
-        <td> <?php echo $row['op_id']; ?> </td>
-        <td> <?php echo $row['pieces_produced']; ?> </td>
+        <td><a href="">Edit</a></td>
+        <td><a href="">Delete</a></td>
       </tr>
     <?php 
   } ?>
