@@ -27,8 +27,11 @@
 <body>
  
 <div class="container">
-  <h2>Table</h2> 
-  <p>Please Review the :</p>                                                                                      
+  <h2><?php
+$today = getdate();
+print_r($today);
+?></h2> 
+  <p>Please Review the Records You Entered Today:</p>                                                                                      
   <div class="table-responsive">          
 
   <table class="table">
