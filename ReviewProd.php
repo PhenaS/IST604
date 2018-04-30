@@ -20,7 +20,7 @@
  ?>
 
 <meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >42
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -28,13 +28,8 @@
  
 <div class="container">
   <h2>Table</h2> 
-  <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>                                                                                      
+  <p>Please Review the :</p>                                                                                      
   <div class="table-responsive">          
-signup.php	Add files via upload	6 hours ago
-sql.php	Add files via upload	a month ago
-sqltest.php	Add files via upload	a month ago
-test.php	Create test.php	18 days ago
-trans.php	Add files via upload	2 hours ago
 
   <table class="table">
     <thead>
