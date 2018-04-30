@@ -57,7 +57,16 @@
         <td> <?php echo $row['job_id']; ?> </td>
         <td> <?php echo $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; ?> </td>
-        <td><a href="edit.php">Edit</a> <?php session_start(); $_SESSION['line'] = $row['line_id']; ?></td>
+        <td><a href="edit.php">Edit</a> <?php session_start(); $_SESSION['line'] = $row['line_id'];
+        $_SESSION['line'] = $row['line_id'];
+        $_SESSION['op_id'] = $row['op_id'];
+        $_SESSION['individual_id'] = $row['individual_id'];
+        $_SESSION['hours_worked'] = $row['hours_worked'];
+        $_SESSION['job_id'] = $row['job_id'];
+        $_SESSION['pieces_produced'] = $row['pieces_produced'];
+
+        
+        ?></td>
         <td><a href="">Delete</a></td>
       </tr>
     <?php 
