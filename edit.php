@@ -21,9 +21,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <p>Please be sure you are an employee of Solutions At Work Inc.  </p>
       <form id="login" name="login" form action="checkauth.php" method="post" style="width:80%">
         <p><input class="w3-input w3-border" type="Text" placeholder="<?php session_start(); echo $_SESSION['line']; ?>" name="line" required disabled></p>
-        <p><input class="w3-input w3-border" type="Text" placeholder="<?php  echo $_SESSION['line']; ?>" name="IndID" pattern=".{3,5}" required title="Invalid"></p>
+        <p><input class="w3-input w3-border" type="Text" placeholder="<?php  echo $_SESSION['individual_id']; ?>" name="IndID" pattern=".{3,5}" required title="Invalid"></p>
         <p><input class="w3-input w3-border" type="number" placeholder="<?php  echo $_SESSION['hours_worked']; ?>" name="Hours" required></p>
-        <p><input class="w3-input w3-border" type="number" placeholder="<?php  echo $_SESSION['job_id']; ?>" name="jobnum" required></p>
+        <p><input class="w3-input w3-border" type="number" placeholder="<?php  echo $_SESSION['job_id']; ?>" name="jobnum" required>Hi</p>
         <p><input class="w3-input w3-border" type="number" placeholder="<?php  echo $_SESSION['op_id']; ?>" name="opnum" required></p>
         <p><input class="w3-input w3-border" type="number" placeholder="<?php  echo $_SESSION['pieces_produced']; ?>" name="qty" required></p>
         <button type="submit" class="w3-button w3-block w3-black">Sign Up</button>

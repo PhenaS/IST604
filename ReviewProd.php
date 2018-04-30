@@ -64,8 +64,6 @@
         $_SESSION['hours_worked'] = $row['hours_worked'];
         $_SESSION['job_id'] = $row['job_id'];
         $_SESSION['pieces_produced'] = $row['pieces_produced'];
-
-        
         ?></td>
         <td><a href="">Delete</a></td>
       </tr>
