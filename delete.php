@@ -1,5 +1,5 @@
 <?php
 
-echo $_SESSION['line'];
+echo $_SESSION['linedel'];
 
 ?>

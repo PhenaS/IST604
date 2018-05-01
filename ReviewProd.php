@@ -65,7 +65,7 @@
         $_SESSION['job_id'] = $row['job_id'];
         $_SESSION['pieces_produced'] = $row['pieces_produced'];
         ?></td>
-        <td><a href="delete.php">Delete</a><?php session_start(); $_SESSION['line'] = $row['line_id'];?></td>
+        <td><a href="delete.php">Delete</a><?php session_start(); $_SESSION['linedel'] = $row['line_id'];?></td>
       </tr>
     <?php 
   } ?>
