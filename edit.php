@@ -19,7 +19,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-col s4">
     <h4>Solutions at Work Inc</h4>
     <p>Please be sure you are an employee of Solutions At Work Inc.  </p>
-      <form id="login" name="login" form action="checkauth.php" method="post" style="width:80%">
+      <form id="login" name="login" form action="editauth.php" method="post" style="width:80%">
         <p><input class="w3-input w3-border" type="Text" value="<?php session_start(); echo $_SESSION['line']; ?>" name="line" required disabled></p>
         <p><input class="w3-input w3-border" type="Text" value="<?php  echo $_SESSION['individual_id']; ?>" name="IndID" pattern=".{3,5}" required title="Invalid"></p>
         <p><input class="w3-input w3-border" type="number" value="<?php  echo $_SESSION['hours_worked']; ?>" name="Hours" required></p>
