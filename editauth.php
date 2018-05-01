@@ -11,6 +11,7 @@ try{
     $stmt = $conn->query("$sql");
     $row = $stmt->fetch();
     $conn = NULL;
+    header("Location: Reviewprod.php");
     }catch(Exception $e){die(print_r($e));}
 
 
