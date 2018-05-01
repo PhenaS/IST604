@@ -57,8 +57,7 @@
         <td> <?php echo $row['job_id']; ?> </td>
         <td> <?php echo $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; ?> </td>
-        <td><a href="edit.php">Edit</a> <?php session_start(); $_SESSION['table'] = array(
-                                                              array($row['line_id'],
+        <td><a href="test.php">Edit</a> <?php session_start(); $_SESSION['table'] = array(array($row['line_id'],
                                                                     $row['entry_date'],
                                                                     $row['individual_id'],
                                                                     $row['hours_worked'],
@@ -68,7 +67,7 @@
                                                                     )
                                                               );
         ?></td>
-        <td><a href="delete.php">Delete</a><?php session_start(); $_SESSION['linedel'] = $row['line_id'];?></td>
+        <td><a href="delete.php">Delete</a></td>
       </tr>
     <?php 
   } ?>
