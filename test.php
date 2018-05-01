@@ -1,5 +1,5 @@
 <?php
 session_start();
 
-echo $_SESSION['table']
+print_r($_SESSION['table']);
 ?>
