@@ -20,7 +20,7 @@
  ?>
 
 <meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -41,23 +41,31 @@
         <th>job</th>
         <th>operation</th>
         <th>pieces</th>
+        
       </tr>
     </thead>
     <tbody>
-<?php
-while ($row = $stmt->fetch())
+    <?php
+    while ($row = $stmt->fetch())
     {  
       ?>
       <tr>
-        <td> <?php echo $row['line_id']; $_SESSION['line'] = $row['line_id']; ?> </td>
+        <td> <?php echo $row['line_id']; ?> </td>
         <td> <?php echo $row['entry_date']; ?> </td>
         <td> <?php echo $row['individual_id']; ?> </td>
         <td> <?php echo $row['hours_worked']; ?> </td>
         <td> <?php echo $row['job_id']; ?> </td>
         <td> <?php echo $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; ?> </td>
-        <td><a href="test.php">Edit</a></td>
-        <td><a href="delete.php">Delete</a></td>
+        <td><a href="edit.php">Edit</a> <?php session_start(); $_SESSION['line'] = $row['line_id'];
+        $_SESSION['line'] = $row['line_id'];
+        $_SESSION['op_id'] = $row['op_id'];
+        $_SESSION['individual_id'] = $row['individual_id'];
+        $_SESSION['hours_worked'] = $row['hours_worked'];
+        $_SESSION['job_id'] = $row['job_id'];
+        $_SESSION['pieces_produced'] = $row['pieces_produced'];
+        ?></td>
+        <td><a href="delete.php">Delete</a><?php session_start(); $_SESSION['linedel'] = $row['line_id'];?></td>
       </tr>
     <?php 
   } ?>
