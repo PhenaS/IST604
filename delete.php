@@ -13,7 +13,7 @@ try{
      $stmt = $conn->query("$sql");
      $conn = NULL;
      echo "Succesfully Deleted!";
-     header("refresh:1;url=production_entry.php");
+     header("refresh:1;url=review_prod.php");
      }catch(Exception $e){die(print_r($e));}    
  
 ?>
