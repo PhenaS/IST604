@@ -59,11 +59,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Image header -->
   <div class="w3-display-container w3-container">
-    <img src="euclid.jpg" alt="Euclid AAC Individuals" style="width:100%">
     <div class="w3-display-topleft w3-text-white" style="padding:22px 48px">
       <h1 class="w3-jumbo w3-hide-small">SAW inc</h1>
       <h1 class="w3-hide-large w3-hide-medium"></h1>
-      <h1 class="w3-hide-small" style="color:#dde018">Serving People with Developmental Disabilities</h1>
+      <h1 class="w3-hide-small" >Serving People with Developmental Disabilities</h1>
       <br><br>
     </div>
   </div>
