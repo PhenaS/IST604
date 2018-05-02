@@ -31,5 +31,6 @@ while ($row = $_SESSION['table']->fetch())
         <td><a href="test.php">Edit</a></td>
         <td><a href="delete.php">Delete</a></td>
       </tr> 
+    <?php } ?>
       </tbody>
   </table>
