@@ -48,7 +48,7 @@
 <?php
 while ($row = $stmt->fetch())
     {  
-      $_SESSION['table'] = $stmt;
+      $_SESSION['table'] = $stmt->fetch();
       ?>
       <tr>
         <td> <?php echo $row['line_id']; ?> </td>
