@@ -52,6 +52,7 @@
 
 while ($row = $stmt->fetch())
     {  
+      $_SESSION['table'] = $row;
       ?>
       <tr>
         <td> <?php echo $row['line_id']; ?> </td>
