@@ -26,9 +26,8 @@
     <tbody
 <?php
     session_start();
-    while ($row = $stmt->fetch())
+    while ($row = $_SESSION['table']->fetch())
     {  
-      $_SESSION['table'] = $stmt;
       ?>
       <tr>
         <td> <?php echo $row['line_id']; ?> </td>
@@ -42,7 +41,8 @@
         <td><a href="delete.php">Delete</a></td>
       </tr>
     <?php 
-  } ?>
+  } 
+    ?>
     </tbody>
   </table>
   </div>
