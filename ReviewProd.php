@@ -19,7 +19,7 @@
         }catch(Exception $e){die(print_r($e));}
  ?>
 
-<meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">
+<meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">42
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -45,14 +45,10 @@
       </tr>
     </thead>
     <tbody
-    
 <?php
-
-
-
 while ($row = $stmt->fetch())
     {  
-      $_SESSION['table'] = $row;
+      $_SESSION['table'] = $stmt;
       ?>
       <tr>
         <td> <?php echo $row['line_id']; ?> </td>
