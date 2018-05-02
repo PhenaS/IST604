@@ -12,7 +12,6 @@ try{
      $sql = ("DELETE FROM piece_production_sheet WHERE line_id =  " . $_SESSION['line'] . ""); 
      $stmt = $conn->query("$sql");
      $conn = NULL;
-     echo "Succesfully Deleted!";
      header("url=reviewprod.php");
      }catch(Exception $e){die(print_r($e));}    
  
