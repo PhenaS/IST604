@@ -16,6 +16,7 @@
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet WHERE  entry_date >= getdate() AND emp_id = " . $empid . ""); 
         $stmt = $conn->query("$sql");
+        $_SESSION['table'] = $stmt;
         }catch(Exception $e){die(print_r($e));}
  ?>
 
@@ -44,9 +45,13 @@
         
       </tr>
     </thead>
-    <tbody>
-    <?php
-    while ($row = $stmt->fetch())
+    <tbody
+    
+<?php
+
+
+
+while ($row = $stmt->fetch())
     {  
       ?>
       <tr>
@@ -57,16 +62,7 @@
         <td> <?php echo $row['job_id']; ?> </td>
         <td> <?php echo $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; ?> </td>
-        <td><a href="test.php">Edit</a> <?php session_start(); $_SESSION['table'] = array(array($row['line_id'],
-                                                                    $row['entry_date'],
-                                                                    $row['individual_id'],
-                                                                    $row['hours_worked'],
-                                                                    $row['job_id'],
-                                                                    $row['op_id'],
-                                                                    $row['pieces_produced']
-                                                                    )
-                                                              );
-        ?></td>
+        <td><a href="test.php">Edit</a></td>
         <td><a href="delete.php">Delete</a></td>
       </tr>
     <?php 
