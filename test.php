@@ -11,7 +11,7 @@
         
       </tr>
     </thead>
-    <tbody
+    <tbody>
 
 <?php
 session_start();
@@ -19,7 +19,6 @@ session_start();
 while ($row = $_SESSION['table']->fetch())
     {  
 ?>
-
       <tr>
         <td> <?php echo $row['line_id']; ?> </td>
         <td> <?php echo $row['entry_date']; ?> </td>
