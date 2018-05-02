@@ -15,7 +15,6 @@
 
 <?php
 session_start();
-
 while ($row = $_SESSION['table']->fetch())
     {  
 ?>
@@ -27,9 +26,8 @@ while ($row = $_SESSION['table']->fetch())
         <td> <?php echo $row['job_id']; ?> </td>
         <td> <?php echo $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; ?> </td>
-        <td><a href="test.php">Edit</a></td>
-        <td><a href="delete.php">Delete</a></td>
       </tr> 
-    <?php } ?>
+<?php } ?>
       </tbody>
   </table>
+
