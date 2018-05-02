@@ -19,8 +19,8 @@
         }catch(Exception $e){die(print_r($e));}
  ?>
 
-<meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">42
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -41,17 +41,15 @@
         <th>job</th>
         <th>operation</th>
         <th>pieces</th>
-        
       </tr>
     </thead>
-    <tbody
+    <tbody>
 <?php
 while ($row = $stmt->fetch())
     {  
-      $_SESSION['table'] = $stmt->fetch();
       ?>
       <tr>
-        <td> <?php echo $row['line_id']; ?> </td>
+        <td> <?php echo $row['line_id']; $_SESSION['line'] = $row['line_id']; ?> </td>
         <td> <?php echo $row['entry_date']; ?> </td>
         <td> <?php echo $row['individual_id']; ?> </td>
         <td> <?php echo $row['hours_worked']; ?> </td>
