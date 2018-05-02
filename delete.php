@@ -12,7 +12,7 @@ try{
      $sql = ("DELETE FROM piece_production_sheet WHERE line_id =  " . $_SESSION['line'] . ""); 
      $stmt = $conn->query("$sql");
      $conn = NULL;
-     header("url=reviewprod.php");
+     header("refresh:1;url=reviewprod.php");
      }catch(Exception $e){die(print_r($e));}    
  
 ?>
