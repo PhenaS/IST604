@@ -16,7 +16,6 @@
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet WHERE  entry_date >= getdate() AND emp_id = " . $empid . ""); 
         $stmt = $conn->query("$sql");
-        $_SESSION['table'] = $stmt->fetch();
         }catch(Exception $e){die(print_r($e));}
  ?>
 
