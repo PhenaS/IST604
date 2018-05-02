@@ -1,3 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Date</th>
+        <th>individual_id</th>
+        <th>Hours</th>
+        <th>job</th>
+        <th>operation</th>
+        <th>pieces</th>
+        
+      </tr>
+    </thead>
+    <tbody
+
 <?php
 session_start();
 
@@ -15,4 +30,6 @@ while ($row = $_SESSION['table']->fetch())
         <td> <?php echo $row['pieces_produced']; ?> </td>
         <td><a href="test.php">Edit</a></td>
         <td><a href="delete.php">Delete</a></td>
-      </tr>
+      </tr> 
+      </tbody>
+  </table>
