@@ -51,7 +51,7 @@ $data = array();
 while ($row = $stmt->fetch())
     {  
       $data[] = $row;
-      $_SESSION['date'] = $data[];
+      $_SESSION['data'] = $data;
       ?>
       <tr>
         <td> <?php echo $row['line_id']; $_SESSION['line'] = $row['line_id']; ?> </td>
