@@ -50,8 +50,8 @@
 $data = array();
 while ($row = $stmt->fetch())
     {  
-      $data[] = $row;
-      $_SESSION['data'] = $data;
+      $data['line_id'] = $row;
+      
       ?>
       <tr>
         <td> <?php echo $row['line_id']; $_SESSION['line'] = $row['line_id']; ?> </td>
