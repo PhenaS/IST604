@@ -45,19 +45,12 @@
       </tr>
     </thead>
     <tbody>
-    <?php
+
+<?php
 $data = array();
 while ($row = $stmt->fetch())
     {  
       $data[] = $row;
-    }
-      ?>
-
-
-
-<?php
-while ($row = $stmt->fetch())
-    {  
       ?>
       <tr>
         <td> <?php echo $row['line_id']; $_SESSION['line'] = $row['line_id']; ?> </td>
