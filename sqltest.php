@@ -1,6 +1,6 @@
 <?php
+    session_start();
 
-print_r($_SESSION['data']);
-
+    print_r($_SESSION['lines']);
 
 ?>

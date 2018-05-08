@@ -25,7 +25,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body> entry_date >= CURRENT_TIMESTAMP AND emp_id = " . $empid . ""); 
+<body> 
  
 <div class="container">
   <h2>Todays Entry</h2> 
@@ -47,26 +47,27 @@
     <tbody>
 
 <?php
-$data = array();
-$_SESSION['data'] = $data;
+$linenums = array();
 while ($row = $stmt->fetch())
     {  
-      $data[] = $row['line_id'];
       
       ?>
       <tr>
-        <td> <?php echo $row['line_id']; $_SESSION['line'] = $row['line_id']; ?> </td>
-        <td> <?php echo $row['entry_date']; $_SESSION[''] = $row[''];?> </td>
-        <td> <?php echo $row['individual_id']; $_SESSION['individual_id'] = $row['individual_id'];?> </td>
-        <td> <?php echo $row['hours_worked']; $_SESSION['hours_worked'] = $row['hours_worked'];?> </td>
-        <td> <?php echo $row['job_id'];  $_SESSION['job_id'] = $row['job_id']; ?></td>
-        <td> <?php echo $row['op_id'];  $_SESSION['op_id'] = $row['op_id']; ?> </td>
-        <td> <?php echo $row['pieces_produced']; $_SESSION['pieces_produced'] = $row['pieces_produced'];?> </td>
+        <td> <?php echo $row['line_id']; $linenums[] = $row['line_id'];  ?> </td>
+        <td> <?php echo $row['entry_date']; ?> </td>
+        <td> <?php echo $row['individual_id']; ?> </td>
+        <td> <?php echo $row['hours_worked']; ?> </td>
+        <td> <?php echo $row['job_id']; ?></td>
+        <td> <?php echo $row['op_id']; ?> </td>
+        <td> <?php echo $row['pieces_produced']; ?> </td>
         <td><a href="sqltest.php">sqltest.php</a></td>
         <td><a href="delete.php">Delete</a></td>
       </tr>
     <?php 
-  } ?>
+  } 
+  $_SESSION['lines'] = $linenums;
+  ?>
+
     </tbody>
   </table>
   </div>
