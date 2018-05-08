@@ -48,6 +48,7 @@
 
 <?php
 $data = array();
+$_SESSION['data'] = $data;
 while ($row = $stmt->fetch())
     {  
       $data[] = $row['line_id'];
