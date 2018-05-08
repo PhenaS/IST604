@@ -15,7 +15,7 @@
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet WHERE  entry_date >= 'CURRENT_TIMESTAMP' AND emp_id = " . $empid . ""); 
         $stmt = $conn->query("$sql");
-        }catch(Exception $e){die(print_r($e));} date string in the format of 2013-12-29
+        }catch(Exception $e){die(print_r($e));}
 
 
  ?>
