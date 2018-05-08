@@ -14,7 +14,7 @@
         $now = strtotime("now");
         $conn = new PDO ("sqlsrv:Server = $host; Database = $db", $user, $pwd);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet WHERE  entry_date >= " . $now . " AND emp_id = " . $empid . ""); 
+        $sql = ("SELECT line_id, time_stamp, entry_date, emp_id, individual_id, op_id, hours_worked, job_id, pieces_produced FROM piece_production_sheet WHERE  entry_date >= "' . $now . '" AND emp_id = " . $empid . ""); 
         $stmt = $conn->query("$sql");
         }catch(Exception $e){die(print_r($e));}
  ?>
