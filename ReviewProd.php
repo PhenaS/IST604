@@ -25,7 +25,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body> entry_date >= CURRENT_TIMESTAMP AND emp_id = " . $empid . ""); 
  
 <div class="container">
   <h2>Todays Entry</h2> 
@@ -50,7 +50,7 @@
 $data = array();
 while ($row = $stmt->fetch())
     {  
-      $data['line_id'] = $row;
+      $data[] = $row['line_id'];
       
       ?>
       <tr>
