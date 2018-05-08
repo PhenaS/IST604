@@ -61,7 +61,7 @@ while ($row = $stmt->fetch())
         <td> <?php echo $row['job_id'];  $_SESSION['job_id'] = $row['job_id']; ?></td>
         <td> <?php echo $row['op_id'];  $_SESSION['op_id'] = $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; $_SESSION['pieces_produced'] = $row['pieces_produced'];?> </td>
-        <td><a href="edit.php">sqltest.php</a></td>
+        <td><a href="sqltest.php">sqltest.php</a></td>
         <td><a href="delete.php">Delete</a></td>
       </tr>
     <?php 
