@@ -18,7 +18,7 @@
         }catch(Exception $e){die(print_r($e));}
 
 
- ?>
+?>
 
 <meta name="viewport" content="width=device-width, initial-scalogin.phpe=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -45,6 +45,16 @@
       </tr>
     </thead>
     <tbody>
+    <?php
+$data = array();
+while ($row = $stmt->fetch())
+    {  
+      $data[] = $row;
+    }
+      ?>
+
+
+
 <?php
 while ($row = $stmt->fetch())
     {  
