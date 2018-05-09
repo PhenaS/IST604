@@ -53,7 +53,7 @@ while ($row = $stmt->fetch())
       
       ?>
       <tr>
-        <td> <?php echo $row['line_id']; $row['line_id'] = $_SESSION['line']; $linenums[] = $row['line_id'];  ?> </td>
+        <td> <?php echo $row['line_id']; $_SESSION['line'] = $row['line_id']; $linenums[] = $row['line_id'];  ?> </td>
         <td> <?php echo $row['entry_date']; ?> </td>
         <td> <?php echo $row['individual_id']; ?> </td>
         <td> <?php echo $row['hours_worked']; ?> </td>
