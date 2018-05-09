@@ -60,7 +60,7 @@ while ($row = $stmt->fetch())
         <td> <?php echo $row['job_id']; ?></td>
         <td> <?php echo $row['op_id']; ?> </td>
         <td> <?php echo $row['pieces_produced']; ?> </td>
-        <td><a href="sqltest.php">sqltest.php</a></td>
+        <td><a href="edit">edit.php</a></td>
         <td><a href="delete.php">Delete</a></td>
       </tr>
     <?php 
