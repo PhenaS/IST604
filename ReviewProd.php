@@ -55,11 +55,11 @@ while ($row = $stmt->fetch())
       <tr>
         <td> <?php echo $row['line_id']; $_SESSION['line'] = $row['line_id']; $linenums[] = $row['line_id'];  ?> </td>
         <td> <?php echo $row['entry_date']; ?> </td>
-        <td> <?php echo $row['individual_id']; ?> </td>
-        <td> <?php echo $row['hours_worked']; ?> </td>
-        <td> <?php echo $row['job_id']; ?></td>
-        <td> <?php echo $row['op_id']; ?> </td>
-        <td> <?php echo $row['pieces_produced']; ?> </td>
+        <td> <?php echo $row['individual_id']; $_SESSION['individual_id'] = $row['individual_id']; ?> </td>
+        <td> <?php echo $row['hours_worked']; $_SESSION['hours_worked'] = $row['hours_worked']; ?> </td>
+        <td> <?php echo $row['job_id']; $_SESSION['job_id'] = $row['job_id']; ?></td>
+        <td> <?php echo $row['op_id']; $_SESSION['op_id'] = $row['op_id']; ?> </td>
+        <td> <?php echo $row['pieces_produced']; $_SESSION['pieces_produced'] = $row['pieces_produced']; ?> </td>
         <td><a href="edit.php">edit</a></td>
         <td><a href="delete.php">Delete</a></td>
       </tr>
